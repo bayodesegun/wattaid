@@ -14,7 +14,8 @@
                 <!-- Show location selector if location is not set -->
                 @if ($location == 'unknown')
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="GET" action="{{ url('/home') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/home') }}">
+                        {{ csrf_field() }} 
                         <p>Please select your location to continue.</p>
                         <div class="form-group">
                             <label for="location" class="col-md-3 control-label">Location</label>
