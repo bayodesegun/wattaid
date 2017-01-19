@@ -10,7 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-        <!-- Styles -->
+        <!-- Styles -->        
         <style>
             html, body {
                 background-color: #fff;
@@ -46,7 +46,8 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 100px;
+
             }
 
             .links > a {
@@ -60,8 +61,17 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: -20px;
             }
+
+            a:link {
+                text-decoration: none;
+            }
+
+            .red-text {
+                color: red;
+            }
+
         </style>
     </head>
     <body>
@@ -74,9 +84,11 @@
             @endif
 
             <div class="content">
+                
                 <div class="title m-b-md">
-                    WattAid
-                </div>                
+                    <a href="/home">WattAid</a>                    
+                </div>
+                <p class = "red-text">Your one-stop power info site. Click to enter.</p>                
             </div>
         </div>
     </body>
