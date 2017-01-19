@@ -81,6 +81,18 @@
         @yield('content')
     </div>
 
+    <footer>      
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+          <p class="smaller navbar-brand">&copy 2017 WattAid</p>
+        </div>
+      </nav>
+    </footer>
+    <style>
+      .smaller {
+        font-size: 14px;
+      }
+    </style>
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 </body>
