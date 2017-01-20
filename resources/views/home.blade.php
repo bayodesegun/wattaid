@@ -46,7 +46,7 @@
     <div class="row">
         <!-- Power Plan details here -->
         <div class="col-md-3 no-right-pad">
-            <div class="panel panel-default">
+            <div class="panel panel-default max-height">
                 <div class="panel-heading"><b>Power Plan</b></div>
 
                 <div class="panel-body">
@@ -57,7 +57,7 @@
 
         <!-- Related Posts here -->
         <div class="col-md-6 no-left-pad no-right-pad">
-            <div class="panel panel-default">
+            <div class="panel panel-default max-height">
                 <div class="panel-heading"><b>Related Posts</b></div>
 
                 <div class="panel-body">
@@ -68,7 +68,7 @@
 
         <!-- User's posts and comments here -->
         <div class="col-md-3 no-left-pad">
-            <div class="panel panel-default">
+            <div class="panel panel-default max-height">
                 <div class="panel-heading"><b>Your Posts & Comments</b></div>
 
                 <div class="panel-body">
@@ -89,5 +89,11 @@
     .panel {
         margin-bottom: 0;
     }
+
+    .max-height {
+        height: 750px;
+        margin-bottom: 75px;
+    }
+
 </style>
 @endsection
