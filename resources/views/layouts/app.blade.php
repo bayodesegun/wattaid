@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
 
@@ -91,6 +91,12 @@
     <style>
       .smaller {
         font-size: 14px;
+        margin-bottom: 0px;
+      }
+
+      body { 
+        padding-top: 55px; 
+        padding-bottom: 55px;
       }
     </style>
     <!-- Scripts -->

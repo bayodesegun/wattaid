@@ -91,8 +91,7 @@
     }
 
     .max-height {
-        height: 750px;
-        margin-bottom: 75px;
+        height: 750px;   
     }
 
 </style>
