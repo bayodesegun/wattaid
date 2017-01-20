@@ -24,6 +24,9 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
+        // Variable to determine is user is logged in or not
+        $user = null;
+
         // Handle setting of location...
         if ($loc = $request->input('location')) {
             session(['location' => $loc ]);
@@ -43,6 +46,6 @@ class HomeController extends Controller
             // TODO: 'remember' user location from profile
             // $location = Auth::user()->location;
         }
-        return view('home', ['message' => $message, 'location' => $location]);
+        return view('home', ['message' => $message, 'location' => $location, 'user' => $user]);
     }
 }
