@@ -1,5 +1,15 @@
 @extends('layouts.app')
-
+<script src="tinymce/js/tinymce/tinymce.min.js"></script>
+<script>
+  tinymce.init({ 
+    selector:'textarea',
+    menubar: false,
+    plugins: [
+    'advlist autolink lists link image charmap print preview anchor'    
+  ],
+    toolbar: 'undo redo | bold italic | bullist numlist',
+  });  
+</script>
 @section('content')
 <div class="container">
     <div class="row">
