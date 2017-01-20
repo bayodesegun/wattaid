@@ -60,7 +60,7 @@
                 <div class="panel-heading"><b>Power Plan</b></div>
 
                 <div class="panel-body">
-                    Location: {{ $location }}.
+                    <b>Location:</b> {{ $location }}. @if ($location != 'unknown') <a href="#">Change</a> @endif                  
                 </div>                
             </div>
         </div>
@@ -71,7 +71,26 @@
                 <div class="panel-heading"><b>Related Posts</b></div>
 
                 <div class="panel-body">
-                    Posts: 
+                  <p><a class="btn btn-default <?= $user ? 'active' : 'disabled'; ?>" href="#" onclick="$('#post-form').show()">New Post</a></p>                             
+                    <form id ="post-form" style="display: none;" class="form-horizontal col-md-12" role="form" method="POST" action="{{ url('/home') }}">
+                        {{ csrf_field() }} 
+                        
+                        <input type="hidden" name="user" value="{{$user}}">
+                        <div class="form-group">
+                            <label for="title">Post Title</label>
+                            <input type="text" class="form-control" name="title" required>                            
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>                                              
+                            <textarea id="message" class="form-control" name="message"></textarea>                                              
+                        </div>
+                        <div class="form-group">
+                          <a class="btn btn-danger" href="#" onclick="$('#post-form').hide()">Cancel Post</a>
+                           <button type="submit" class="btn btn-success pull-right">Post It!</button>                         
+                        </div> 
+
+                    </form> 
+
                 </div>                
             </div>
         </div>
@@ -82,7 +101,7 @@
                 <div class="panel-heading"><b>Your Posts & Comments</b></div>
 
                 <div class="panel-body">
-                    Posts: 
+                    
                 </div>                
             </div>
         </div>
@@ -103,6 +122,5 @@
     .max-height {
         height: 750px;   
     }
-
 </style>
 @endsection
