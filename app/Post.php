@@ -6,12 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-	/**
-	* Dear Mr Eloquent, MySQL will handle the timestamp columns for us, thank you
-	*
-	*/
-	public $timestamps = false;
-
+	
 	/**
      * The attributes that are mass assignable.
      *
