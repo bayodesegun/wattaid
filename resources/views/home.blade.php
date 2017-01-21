@@ -140,6 +140,10 @@
         margin-bottom: 0;
     }
 
+    .alert {
+        margin-bottom: 0;
+    }
+
     .max-height {
         height: 750px;   
     }
