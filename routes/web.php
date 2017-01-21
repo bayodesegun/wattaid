@@ -10,13 +10,19 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+// Specify page to render on visiting the root URL
 Route::get('/', function () {
     return view('welcome');
 });
 
+// Specify authentication routes
 Auth::routes();
 
+// Handles GET requests sending data to the page (default) 
 Route::get('/home', 'HomeController@index');
 
+// Handle POST requests sending data to the page (location form)
 Route::post('/home', 'HomeController@index');
+
+// Handle POST requests for sending data to posts table
+Route::post('post/store', 'PostController@store');
