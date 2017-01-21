@@ -100,23 +100,34 @@
                         </div> 
 
                     </form> 
-                    @if ($location && $posts)
+                    @if ($location !='unknown')
                     <div class="post-listing">
-                      @foreach ($posts as $post)
-                      <p class="post-title">
-                        <a href="#" ><b>{{$post->post_title}}</b></a>
-                      </p>
-                      <div class="post-credit-in-caps">
-                        <b>{{$post->user}}</b> | {{ date('M j, Y h:i:s', strtotime($post->created_at)) }}
-                      </div>
-                      <div class="content">
-                        <?php echo $cont = substr(strip_tags($post->content),0,100); if (strlen($cont) < strlen($post->content)) echo "..." ?>
-                      </div>
-                      <hr class="hr-compact">
-                      @endforeach
+                      @if ($posts->total() > 0)
+                        <p class="text-info"> Total posts: <b>{{ $posts->total() }} </b></p>
+                        <hr class="hr-compact">
+                        @foreach ($posts as $post)
+                        <p class="post-title">
+                          <a href="#" ><b>{{$post->post_title}}</b></a>
+                        </p>
+                        <div class="post-credit-in-caps">
+                          <b>{{$post->user}}</b> | {{ date('M j, Y h:i:s', strtotime($post->created_at)) }}
+                        </div>
+                        <div class="content">
+                          <?php echo $cont = substr(strip_tags($post->content),0,100); if (strlen($cont) < strlen($post->content)) echo "..." ?>
+                        </div>
+                        <hr class="hr-compact">
+                        @endforeach
+
+                        {{ $posts->links() }}
+                      @else
+                        <p class="text-info"> No posts for this location yet. Be the first to say something! </b></p>
+                      @endif
                     </div>
-                    {{ $posts->links() }}
+                    
+                    @else
+                      <p>Please select your Location to view related posts.</p>
                     @endif
+
                 </div>                
             </div>
         </div>
@@ -124,7 +135,7 @@
         <!-- User's posts and comments here -->
         <div class="col-md-3 no-left-pad">
             <div id="right-content" class="panel panel-default">
-                <div class="panel-heading"><b>Your Posts & Comments</b></div>
+                <div class="panel-heading"><b>Your Posts</b></div>
 
                 <div class="panel-body">
                     
