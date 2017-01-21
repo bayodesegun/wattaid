@@ -12,6 +12,23 @@
 </script>
 @section('content')
 <div class="container">
+    @if (session('status'))
+    <div onmouseenter="$(this).fadeOut(5000)" class="alert alert-success alert-dismissable">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>{{ session('status') }}</strong>
+    </div>
+    @endif
+    @if (count($errors) > 0)
+    <div onmouseenter="$(this).fadeOut(5000)" class="alert alert-danger alert-dismissable">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        Please check the following errors:
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
