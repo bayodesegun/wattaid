@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use App\Post;
+
 class HomeController extends Controller
 {
     /**
@@ -27,6 +29,9 @@ class HomeController extends Controller
         // Variable to determine is user is logged in or not
         $user = null;
 
+        // The posts to show, if any
+        $posts = null;
+
         // Handle setting of location...
         if ($loc = $request->input('location')) {
             session(['location' => $loc ]);
@@ -46,6 +51,11 @@ class HomeController extends Controller
             // TODO: 'remember' user location from profile
             // $location = Auth::user()->location;
         }
-        return view('home', ['message' => $message, 'location' => $location, 'user' => $user]);
+
+        if ($location != 'unknown') {
+            $posts = Post::where('location',$location)->orderBy('created_at', 'desc')->paginate(10);
+        }
+
+        return view('home', ['message' => $message, 'location' => $location, 'user' => $user, 'posts' => $posts]);
     }
 }

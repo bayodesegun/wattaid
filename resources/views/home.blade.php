@@ -100,7 +100,23 @@
                         </div> 
 
                     </form> 
-
+                    @if ($location && $posts)
+                    <div class="post-listing">
+                      @foreach ($posts as $post)
+                      <p class="post-title">
+                        <a href="#" ><b>{{$post->post_title}}</b></a>
+                      </p>
+                      <div class="post-credit-in-caps">
+                        <b>{{$post->user}}</b> | {{ date('M j, Y h:i:s', strtotime($post->created_at)) }}
+                      </div>
+                      <div class="content">
+                        <?php echo $cont = substr(strip_tags($post->content),0,100); if (strlen($cont) < strlen($post->content)) echo "..." ?>
+                      </div>
+                      <hr class="hr-compact">
+                      @endforeach
+                    </div>
+                    {{ $posts->links() }}
+                    @endif
                 </div>                
             </div>
         </div>
