@@ -53,7 +53,7 @@ class HomeController extends Controller
         }
 
         if ($location != 'unknown') {
-            $posts = Post::where('location',$location)->orderBy('created_at', 'desc')->paginate(10);
+            $posts = Post::where('location',$location)->where('type', 'p')->orderBy('created_at', 'desc')->paginate(10);
         }
 
         return view('home', ['message' => $message, 'location' => $location, 'user' => $user, 'posts' => $posts]);
