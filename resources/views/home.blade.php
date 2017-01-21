@@ -90,9 +90,13 @@
                   <a class="btn btn-warning btn-xs pull-right <?= ($location != 'unknown') && $user ? 'active' : 'disabled'; ?>" href="#" onclick="$('#post-form').show()">New Post</a>
                 </div>
 
+                <div class="panel-body">                                              
+                    <form id ="post-form" style="display: none;" class="form-horizontal col-md-12" role="form" method="post" action="{{ url('/post/store') }}">
                         {{ csrf_field() }} 
                         
                         <input type="hidden" name="user" value="{{$user}}">
+                        <input type="hidden" name="location" value="{{$location}}">
+                        <input type="hidden" name="type" value="p">
                         <div class="form-group">
                             <label for="title">Post Title</label>
                             <input type="text" class="form-control" name="title" required>                            
@@ -102,7 +106,7 @@
                             <textarea id="message" class="form-control" name="message"></textarea>                                              
                         </div>
                         <div class="form-group">
-                          <a class="btn btn-danger" href="#" onclick="$('#post-form').hide()">Cancel Post</a>
+                          <a class="btn btn-danger" href="#" onclick="$('#post-form').hide()">Cancel</a>
                            <button type="submit" class="btn btn-success pull-right">Post It!</button>                         
                         </div> 
 
