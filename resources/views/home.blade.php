@@ -85,11 +85,11 @@
         <!-- Related Posts here -->
         <div class="col-md-6 no-left-pad no-right-pad">
             <div class="panel panel-default max-height">
-                <div class="panel-heading"><b>Related Posts</b></div>
+                <div class="panel-heading">
+                  <b>Related Posts</b>
+                  <a class="btn btn-warning btn-xs pull-right <?= ($location != 'unknown') && $user ? 'active' : 'disabled'; ?>" href="#" onclick="$('#post-form').show()">New Post</a>
+                </div>
 
-                <div class="panel-body">
-                  <p><a class="btn btn-default <?= $user ? 'active' : 'disabled'; ?>" href="#" onclick="$('#post-form').show()">New Post</a></p>                             
-                    <form id ="post-form" style="display: none;" class="form-horizontal col-md-12" role="form" method="POST" action="{{ url('/home') }}">
                         {{ csrf_field() }} 
                         
                         <input type="hidden" name="user" value="{{$user}}">
