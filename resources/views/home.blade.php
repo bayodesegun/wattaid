@@ -1,15 +1,4 @@
 @extends('layouts.app')
-<script src="tinymce/js/tinymce/tinymce.min.js"></script>
-<script>
-  tinymce.init({ 
-    selector:'textarea',
-    menubar: false,
-    plugins: [
-    'advlist autolink lists link image charmap print preview anchor'    
-  ],
-    toolbar: 'undo redo | bold italic | bullist numlist',
-  });  
-</script>
 @section('content')
 <div class="container">
     @if (session('status'))
@@ -128,24 +117,4 @@
         </div>
     </div>
 </div>
-<style>
-    .no-left-pad {
-        padding-left: 0;        
-    }
-
-    .no-right-pad {
-        padding-right: 0;        
-    }
-    .panel {
-        margin-bottom: 0;
-    }
-
-    .alert {
-        margin-bottom: 0;
-    }
-
-    .max-height {
-        height: 900px;   
-    }
-</style>
 @endsection

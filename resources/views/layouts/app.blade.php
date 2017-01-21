@@ -11,9 +11,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Scripts -->
+    <!-- Scripts -->    
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
@@ -88,18 +89,9 @@
         </div>
       </nav>
     </footer>
-    <style>
-      .smaller {
-        font-size: 14px;
-        margin-bottom: 0px;
-      }
-
-      body { 
-        padding-top: 55px; 
-        padding-bottom: 55px;
-      }
-    </style>
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script src="tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+    .no-left-pad {
+        padding-left: 0;        
+    }
+
+    .no-right-pad {
+        padding-right: 0;        
+    }
+    .panel {
+        margin-bottom: 0;
+    }
+
+    .alert {
+        margin-bottom: 0;
+    }
+
+    .post-title {
+      margin-bottom: 0;
+      line-height: 1.5;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .post-credit-in-caps {
+      font-size: 10px;
+      color: grey;
+      margin-bottom: 1em!important;
+      text-transform: uppercase;
+    }
+
+    .hr-compact {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .smaller {
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+
+    body { 
+      padding-top: 55px; 
+      padding-bottom: 55px;
+    }
