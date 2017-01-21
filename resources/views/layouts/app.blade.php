@@ -89,8 +89,10 @@
         </div>
       </nav>
     </footer>
+    
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="tinymce/js/tinymce/tinymce.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
