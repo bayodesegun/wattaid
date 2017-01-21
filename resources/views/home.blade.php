@@ -145,7 +145,7 @@
     }
 
     .max-height {
-        height: 750px;   
+        height: 900px;   
     }
 </style>
 @endsection
