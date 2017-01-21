@@ -54,7 +54,7 @@ class PostController extends Controller
             'type' => $request->type,
             'post_title' => $request->title,
             'content' => $request->message,
-            'post_id' => uniqid($data['type'], true),
+            'post_id' => uniqid($request->type, true),
         ]); 
 
         return redirect('home')->with('status', 'Post saved successfully!');      
