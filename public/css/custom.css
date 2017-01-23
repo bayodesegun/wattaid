@@ -44,4 +44,8 @@
     textarea {
       resize: vertical;
     }
+
+    #middle-content {
+      display: table;
+      width:100%;
     }
