@@ -63,7 +63,7 @@
         <!-- Power Plan details here -->
         <div class="col-md-3 no-right-pad">
             <div id="left-content" class="panel panel-default">
-                <div class="panel-heading"><b>Power Plan</b></div>
+                <div class="panel-heading text-center"><b>Power Plan</b></div>
 
                 <div class="panel-body">
                     <b>Location:</b> {{ $location }}. @if ($location != 'unknown') <a href="#">Change</a> @endif                  
@@ -135,7 +135,7 @@
         <!-- User's posts and comments here -->
         <div class="col-md-3 no-left-pad">
             <div id="right-content" class="panel panel-default">
-                <div class="panel-heading"><b>Your Posts</b></div>
+                <div class="panel-heading text-center"><b>Your Posts</b></div>
 
                 <div class="panel-body">
                     
