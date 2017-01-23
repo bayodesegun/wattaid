@@ -12,10 +12,15 @@
 disable this plug-in for now */ 
 
 $(document).ready( function () {
-	// Find the content div with the highest height and normalize the others
-	max_height = Math.max($('#left-content').height(), $('#middle-content').height(), $('#right-content').height());
-	
-	$('#left-content').height(max_height);
-	$('#middle-content').height(max_height);
-	$('#right-content').height(max_height);
+  equalizeContentDivs();
 });
+
+function equalizeContentDivs() {
+  // Find the content div with the highest height and normalize the others
+  max_height = Math.max($('#left-content').height(), $('#middle-content').height(), $('#right-content').height());
+  
+  $('#left-content').height(max_height);
+  $('#middle-content').height(max_height);
+  $('#right-content').height(max_height);
+
+}
