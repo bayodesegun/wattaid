@@ -76,35 +76,36 @@
             <div id="middle-content" class="panel panel-default">
                 <div class="panel-heading">
                   <b>Related Posts</b>
-                  <a class="btn btn-warning btn-xs pull-right <?= ($location != 'unknown') && $user ? 'active' : 'disabled'; ?>" href="#" onclick="$('#post-form').show()">New Post</a>
+                  @if ($posts) <p class="alert-info pull-right"> Total posts: <b>{{ $posts->total() }} </b></p> @endif                  
                 </div>
 
-                <div class="panel-body">                                              
-                    <form id ="post-form" style="display: none;" class="form-horizontal col-md-12" role="form" method="post" action="{{ url('/post/store') }}">
+                <div class="panel-body">                              
+                    @if ($location !='unknown')
+                      @if ($user)
+                      <p class="text-center alert-warning">Submit new post</p>
+                      <form id ="post-form" class="form-horizontal col-md-12" role="form" method="post" action="{{ url('/post/store') }}">
                         {{ csrf_field() }} 
                         
                         <input type="hidden" name="user" value="{{$user}}">
                         <input type="hidden" name="location" value="{{$location}}">
                         <input type="hidden" name="type" value="p">
                         <div class="form-group">
-                            <label for="title">Post Title</label>
-                            <input type="text" class="form-control" name="title" required>                            
+                            <label for="title" class="hidden">Post Title</label>
+                            <input type="text" class="form-control" name="title" placeholder="Post Title (required)" required>                            
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>                                              
-                            <textarea id="message" class="form-control" name="message"></textarea>                                              
+                            <label for="message" class="hidden">Message</label>                                              
+                            <textarea onmouseleave="equalizeContentDivs()" rows="7" id="message" class="form-control" name="message" placeholder="Message - say something (required)" required></textarea>                                              
                         </div>
-                        <div class="form-group">
-                          <a class="btn btn-danger" href="#" onclick="$('#post-form').hide()">Cancel</a>
-                           <button type="submit" class="btn btn-success pull-right">Post It!</button>                         
+                        <div class="form-group">                          
+                           <button type="submit" class="btn btn-warning pull-right">Post It!</button>                         
                         </div> 
-
-                    </form> 
-                    @if ($location !='unknown')
+                        <hr class="hr-compact"> 
+                      </form>
+                      @endif
+                      
                     <div class="post-listing">
                       @if ($posts->total() > 0)
-                        <p class="text-info"> Total posts: <b>{{ $posts->total() }} </b></p>
-                        <hr class="hr-compact">
                         @foreach ($posts as $post)
                         <p class="post-title">
                           <a href="#" ><b>{{$post->post_title}}</b></a>
@@ -117,7 +118,7 @@
                         </div>
                         <hr class="hr-compact">
                         @endforeach
-
+                        
                         {{ $posts->links() }}
                       @else
                         <p class="text-info"> No posts for this location yet. Be the first to say something! </b></p>
@@ -126,7 +127,7 @@
                     
                     @else
                       <p>Please select your Location to view related posts.</p>
-                    @endif
+                    @endif                    
 
                 </div>                
             </div>
