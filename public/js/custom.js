@@ -1,12 +1,15 @@
-// 
-tinymce.init({ 
+
+/* 
+  tinymce.init({ 
     selector:'textarea',
     menubar: false,
     plugins: [
     'advlist autolink lists link image charmap print preview anchor'    
   ],
     toolbar: 'undo redo | bold italic | bullist numlist',
-  });  
+  }); 
+
+disable this plug-in for now */ 
 
 $(document).ready( function () {
 	// Find the content div with the highest height and normalize the others
