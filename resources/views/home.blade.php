@@ -111,7 +111,7 @@
                           <a href="#" ><b>{{$post->post_title}}</b></a>
                         </p>
                         <div class="post-credit-in-caps">
-                          <b>{{$post->user}}</b> | {{ date('M j, Y h:i:s', strtotime($post->created_at)) }}
+                          @if ($post->user==$user) <b class="text-warning">YOU</b>  @else <b>{{$post->user}} @endif</b> | {{ date('M j, Y h:i:s', strtotime($post->created_at)) }}
                         </div>
                         <div class="content">
                           <?php echo $cont = substr(strip_tags($post->content),0,100); if (strlen($cont) < strlen($post->content)) echo "..." ?>
