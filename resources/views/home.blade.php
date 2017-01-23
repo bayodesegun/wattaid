@@ -107,7 +107,7 @@
                     <div class="post-listing">
                       @if ($posts->total() > 0)
                         @foreach ($posts as $post)
-                        <p class="post-title">
+                        <p class="post-title text-info">
                           <a href="#" ><b>{{$post->post_title}}</b></a>
                         </p>
                         <div class="post-credit-in-caps">
