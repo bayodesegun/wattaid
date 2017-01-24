@@ -44,3 +44,11 @@
       display: table;
       width:100%;
     }
+
+    #navigation  {
+      margin-top: 1px;
+      margin-bottom: 5px;
+      background: white;
+      color: black;
+      padding-left: 2px;
+    }
