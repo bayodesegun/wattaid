@@ -23,11 +23,24 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     /**
-     * Where to redirect users after login / registration.
+    * Override the showRegistrationForm function to store the previous URL
+    *
+    */
+    public function showRegistrationForm() {
+        if(!session()->has('url.intended'))
+        {
+            session(['url.intended' => url()->previous()]);
+        }
+        return view('auth.register');    
+    }
+
+    /**
+     * Pull where to redirect users after registration from value saved in url.intended when reg form was requested
      *
-     * @var string
      */
-    protected $redirectTo = '/home';
+    protected function redirectPath () {
+        return session('url.intended');
+    }
 
     /**
      * Create a new controller instance.
