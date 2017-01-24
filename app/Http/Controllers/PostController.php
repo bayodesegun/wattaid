@@ -68,7 +68,25 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = $message = null;
+        if (Auth::check()) {
+            // The user is logged in...
+            $user = Auth::user()->name;            
+            // TODO: 'remember' user location from profile
+            // $location = Auth::user()->location;
+        }
+        else {
+            $message = 'Please <a href="/login">Login</a> or <a href="/register">Register</a> to comment.';
+        }
+        $post = Post::where('id', $id)->first();
+        $comments = Post::where('post_id', $post->post_id)->where('type', 'c')->orderBy('created_at', 'asc')->paginate(10);
+        return view('post', 
+            [
+                'user' => $user,
+                'post' => $post,
+                'message' => $message,
+                'comments' => $comments
+            ]);
     }
 
     /**
