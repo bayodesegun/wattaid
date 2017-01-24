@@ -121,7 +121,7 @@
                         
                         {{ $posts->links() }}
                       @else
-                        <p class="text-info"> No posts for this location yet. Be the first to say something! </b></p>
+                        <p class="text-info"> No posts for this location yet. Be the first to say something! </p>
                       @endif
                     </div>
                     
