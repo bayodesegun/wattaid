@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Auth;
 
 use App\Post;
 
@@ -37,6 +38,19 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+       if ($request->type == 'p') {
+            $this->storePost($request);
+            return redirect('home')->with('status', 'Post saved successfully!');
+       }
+
+       elseif ($request->type == 'c') {
+            $this->storeComment($request);
+            return redirect()->action('PostController@show', ['id' => $request->id])->with('status', 'Comment saved successfully!');
+       }      
+    }
+
+    public function storePost(Request $request) {
+
         // Validate the data
         $this->validate($request, [
             'user' => 'required|max:255',
@@ -57,7 +71,28 @@ class PostController extends Controller
             'post_id' => uniqid($request->type, true),
         ]); 
 
-        return redirect('home')->with('status', 'Post saved successfully!');      
+        
+
+    }
+
+    public function storeComment(Request $request) {
+        // Validate the data
+        $this->validate($request, [
+            'user' => 'required|max:255',
+            'type' => 'required|max:1',
+            'post_id' => 'required|max:255',
+            'message' => 'required|min:5',
+           
+        ]);
+
+        // Save the request data if validation passes        
+        Post::create([
+            'user' => $request->user,            
+            'type' => $request->type,
+            'post_id' => $request->post_id,
+            'content' => $request->message,            
+        ]);         
+        
     }
 
     /**
