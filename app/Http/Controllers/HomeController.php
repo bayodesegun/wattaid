@@ -41,7 +41,7 @@ class HomeController extends Controller
         $location = session('location', 'unknown');
 
         // Default message for users not logged in
-        $message = 'Welcome Guest, you are not logged in. To post or comment, please <a href="/login">Login</a> or <a href="/register">Register</a>.';
+        $message = 'Welcome Guest, you are not logged in.';
 
         if (Auth::check()) {
             // The user is logged in...

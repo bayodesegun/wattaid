@@ -102,8 +102,10 @@
                         </div> 
                         <hr class="hr-compact"> 
                       </form>
+                      @else
+                        <p class="alert-info">Please <a href="/login">Login</a> or <a href="/register">Register</a> to post.</p>
                       @endif
-                      
+                      <hr class="hr-compact">
                     <div class="post-listing">
                       @if ($posts->total() > 0)
                         @foreach ($posts as $post)
