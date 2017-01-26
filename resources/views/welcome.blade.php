@@ -79,7 +79,7 @@
             <div class="content">
                 
                 <div class="title m-b-md">
-                    <a href="/home">WattAid</a>                    
+                    <a href="/dashboard">WattAid</a>                    
                 </div>
                 <p class = "red-text">Your one-stop power info site. Click to enter.</p>                
             </div>

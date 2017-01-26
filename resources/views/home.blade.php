@@ -27,7 +27,7 @@
                     <?php echo $message ?>
                
                 <!-- Show location selector if location is not set or needs to be reset -->                                
-                <form id="location-form" class="form-inline pull-right @if ($location !='unknown') hidden @endif" role="form" method="POST" action="{{ url('/home') }}">
+                <form id="location-form" class="form-inline pull-right @if ($location !='unknown') hidden @endif" role="form" method="POST" action="{{ url('/dashboard') }}">
                     {{ csrf_field() }}                         
                     <div class="form-group">
                         <label for="location" class="hidden control-label">Location</label>                    
