@@ -19,7 +19,7 @@
     </div>
     @endif
     <div id="navigation" class="row-md-12">
-      <b> You are here:  </b> <a href="/home">Dashboard</a> <b>></b> View Post
+      <a href="/home">Dashboard</a> <b>></b> View Post
     </div>
     <div class="row">
         <div class="col-md-12">
