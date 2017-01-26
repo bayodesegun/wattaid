@@ -1,3 +1,4 @@
+@php $page_title="Login" @endphp
 @extends('layouts.app')
 
 @section('content')
