@@ -24,36 +24,31 @@
                 <div class="panel-heading"><b>Dashboard</b></div>
 
                 <div class="panel-body">
+                <!-- show welcome message -->
                     <?php echo $message ?>
-                </div>
+               
 
-                <!-- Show location selector if location is not set -->
-                @if ($location == 'unknown')
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/home') }}">
-                        {{ csrf_field() }} 
-                        <p>Please select your location to continue.</p>
-                        <div class="form-group">
-                            <label for="location" class="col-md-3 control-label">Location</label>
-
-                            <div class="col-md-6">
-                                <select id="location" type="text" class="form-control" name="location" required autofocus>
-                                  <option value="oluyole-ext">Oluyole Extension</option>
-                                  <option value="gbagi-ibadan">Gbagi Market Ibadan</option>
-                                  <option value="oba-ile-est-akure">Oba-Ile Estate Akure</option>
-                                  <option value="texaco-akure">Texaco Akure</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-3">
-                                <button type="submit" class="btn btn-primary">
-                                    Set!
-                                </button>
-                            </div>
-                        </div> 
-                    </form>
-                </div>
+                <!-- Show location selector if location is not set or needs to be reset -->                                
+                <form id="location-form" class="form-inline pull-right @if ($location !='unknown') hidden @endif" role="form" method="POST" action="{{ url('/home') }}">
+                    {{ csrf_field() }}                         
+                    <div class="form-group">
+                        <label for="location" class="hidden control-label">Location</label>                    
+                        <select id="location" type="text" class="form-control" name="location" required autofocus>
+                          <option value="" disabled selected>Select location</option>
+                          <option value="oluyole-ext">Oluyole Extension</option>
+                          <option value="gbagi-ibadan">Gbagi Market Ibadan</option>
+                          <option value="oba-ile-est-akure">Oba-Ile Estate Akure</option>
+                          <option value="texaco-akure">Texaco Akure</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">Set!</button>
+                    </div> 
+                </form>
+                @if ($location != 'unknown')
+                  <div id="location-info-div" class="pull-right">
+                    <b>Location:</b> {{ $location }}. <a href="#" onclick="changeLocation()">Change</a>                  
+                  </div>   
                 @endif
+                </div>                
             </div>
         </div>
     </div>
@@ -65,9 +60,7 @@
             <div id="left-content" class="panel panel-default">
                 <div class="panel-heading text-center"><b>Power Plan</b></div>
 
-                <div class="panel-body">
-                    <b>Location:</b> {{ $location }}. @if ($location != 'unknown') <a href="#">Change</a> @endif                  
-                </div>                
+                             
             </div>
         </div>
 
@@ -100,7 +93,7 @@
                         <div class="form-group">                          
                            <button type="submit" class="btn btn-warning pull-right">Post It!</button>                         
                         </div> 
-                        <hr class="hr-compact"> 
+                      <hr class="hr-compact">                         
                       </form>
                       @else
                         <p class="alert-info">Please <a href="/login">Login</a> or <a href="/register">Register</a> to post.</p>
