@@ -1,3 +1,4 @@
+@php $page_title="View Post" @endphp
 @extends('layouts.app')
 @section('content')
 <div class="container">

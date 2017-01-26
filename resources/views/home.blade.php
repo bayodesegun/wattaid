@@ -1,3 +1,4 @@
+@php $page_title="Dashbord" @endphp
 @extends('layouts.app')
 @section('content')
 <div class="container">
