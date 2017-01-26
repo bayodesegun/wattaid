@@ -27,5 +27,8 @@ Route::post('/dashboard', 'HomeController@index');
 // Handle POST requests for sending data to posts table
 Route::post('post/store', 'PostController@store');
 
-// Handle GET requests for a particular post on posts table
+// Handle POST requests for a particular post on posts table
 Route::post('post/view', 'PostController@show');
+
+// Handle GET requests for a particular post on posts table
+Route::get('post/view', 'PostController@show');

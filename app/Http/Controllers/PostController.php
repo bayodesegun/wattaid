@@ -102,7 +102,17 @@ class PostController extends Controller
      */
     public function show(Request $request)
     {
-        $id = $request->id;
+        $id = null;
+        if ($request->id) {
+            $id = $request->id;
+            session(['post_id' => $id]);
+        }
+        else if (session('post_id')) {
+            $id = session('post_id'); 
+        }
+        else {
+            abort(403, 'Resource not found.');
+        }
         $user = $message = null;
         if (Auth::check()) {
             // The user is logged in...
