@@ -13,6 +13,7 @@ disable this plug-in for now */
 
 $(document).ready( function () {
   equalizeContentDivs();
+  $('#location').dropdown();
 });
 
 function equalizeContentDivs() {

@@ -11,6 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <link href="/css/semantic.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
 
@@ -93,6 +94,7 @@
     <!-- Scripts -->
     <script src="/js/app.js"></script>
     <script src="/js/jquery.min.js"></script>
+    <script src="/js/semantic.min.js"></script>
     <!-- <script src="tinymce/js/tinymce/tinymce.min.js"></script> disble this plug-in for now-->
     <script src="/js/custom.js"></script>
 </body>

@@ -33,8 +33,8 @@
                     {{ csrf_field() }}                         
                     <div class="form-group">
                         <label for="location" class="hidden control-label">Location</label>                    
-                        <select id="location" type="text" class="form-control" name="location" required autofocus>
-                          <option value="" disabled selected>Select location</option>
+                        <select id="location" type="text" class="form-control ui search dropdown" name="location" required autofocus>
+                          <option value="">Select location (type to search)</option>
                           <option value="oluyole-ext">Oluyole Extension</option>
                           <option value="gbagi-ibadan">Gbagi Market Ibadan</option>
                           <option value="oba-ile-est-akure">Oba-Ile Estate Akure</option>
