@@ -21,13 +21,10 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading"><b>Dashboard</b></div>
-
                 <div class="panel-body">
                 <!-- show welcome message -->
                     <?php echo $message ?>
                
-
                 <!-- Show location selector if location is not set or needs to be reset -->                                
                 <form id="location-form" class="form-inline pull-right @if ($location !='unknown') hidden @endif" role="form" method="POST" action="{{ url('/home') }}">
                     {{ csrf_field() }}                         
