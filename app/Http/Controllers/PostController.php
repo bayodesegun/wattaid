@@ -98,11 +98,11 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request)
     {
+        $id = $request->id;
         $user = $message = null;
         if (Auth::check()) {
             // The user is logged in...

@@ -28,4 +28,4 @@ Route::post('/dashboard', 'HomeController@index');
 Route::post('post/store', 'PostController@store');
 
 // Handle GET requests for a particular post on posts table
-Route::get('post/{id}', 'PostController@show');
+Route::post('post/view', 'PostController@show');

@@ -100,9 +100,11 @@
                     <div class="post-listing">
                       @if ($posts->total() > 0)
                         @foreach ($posts as $post)
-                        <p class="post-title text-info">
-                          <a href="{{ url("post/$post->id") }}" ><b>{{$post->post_title}}</b></a>
-                        </p>
+                        <form id="post-details-form" method="post" action="{{ url("post/view") }}">
+                          {{ csrf_field() }} 
+                          <input type="hidden" name="id" value="{{$post->id}}">
+                          <button id="post-details-link" type="submit" class="btn btn-link"><b>{{$post->post_title}}</b></button>
+                        </form>
                         <div class="post-credit-in-caps">
                           @if ($post->user==$user) <b>YOU</b>  @else <b>{{$post->user}} @endif</b> | {{ date('M j, Y h:i:s', strtotime($post->created_at)) }}
                         </div>
