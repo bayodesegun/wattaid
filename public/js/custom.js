@@ -24,3 +24,8 @@ function equalizeContentDivs() {
   $('#right-content').height(max_height);
 
 }
+
+function changeLocation () {
+  $('#location-form').removeClass('hidden'); 
+  $('#location-info-div').addClass('hidden');
+}
