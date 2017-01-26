@@ -1,3 +1,4 @@
+@php $page_title="Register" @endphp
 @extends('layouts.app')
 
 @section('content')
