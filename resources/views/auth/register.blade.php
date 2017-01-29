@@ -1,5 +1,5 @@
-@php $page_title="Register" @endphp
-@extends('layouts.app')
+@extends('master')
+@section('title', 'Sign Up |')
 
 @section('content')
 <div class="container">

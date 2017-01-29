@@ -1,5 +1,6 @@
-@php $page_title="Dashbord" @endphp
-@extends('layouts.app')
+@extends('master')
+@section('title', 'Forum |')
+
 @section('content')
 <div class="container">
     @if (session('status'))
