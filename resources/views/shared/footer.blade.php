@@ -17,6 +17,20 @@
       </div>
       <div class="col-sm-3 col-md-3 col-lg-3">
         <div class="dividerWidget">
+          <h4>Recent Posts</h4>
+          <div class="gDot widget"></div>
+        </div>
+        <div class="widfoot_content">
+          <ul class="links">
+            <li><i class="fa fa-caret-right"></i> <a href="#">Aenean commodo ligula eget dolor<span>November 07, 2013</span></a></li>
+            <li><i class="fa fa-caret-right"></i> <a href="#">Temporibus autem quibusdam <span>November 05, 2013</span></a></li>
+            <li><i class="fa fa-caret-right"></i> <a href="#">Debitis aut rerum saepe <span>November 03, 2013</span></a></li>
+            <li><i class="fa fa-caret-right"></i> <a href="#">Et voluptates repudiandae <span>November 02, 2013</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="dividerWidget">
           <h4>Locate Us</h4>
           <div class="gDot widget"></div>
         </div><br>
@@ -33,22 +47,14 @@
       </div>
       <div class="col-sm-3 col-md-3 col-lg-3">
         <div class="dividerWidget">
-          <h4>Recent Posts</h4>
-          <div class="gDot widget"></div>
-        </div>
-        <div class="widfoot_content">
-          <ul class="links">
-            <li><i class="fa fa-caret-right"></i> <a href="#">Aenean commodo ligula eget dolor<span>November 07, 2013</span></a></li>
-            <li><i class="fa fa-caret-right"></i> <a href="#">Temporibus autem quibusdam <span>November 05, 2013</span></a></li>
-            <li><i class="fa fa-caret-right"></i> <a href="#">Debitis aut rerum saepe <span>November 03, 2013</span></a></li>
-            <li><i class="fa fa-caret-right"></i> <a href="#">Et voluptates repudiandae <span>November 02, 2013</span></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <div class="dividerWidget">
-          <h4>Flickr Gallery</h4>
-          <div class="gDot widget"></div>
+          <h4></h4>
+          <br>
+          <iframe
+            width="200"
+            height="200"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCK4A2GUKhzcS7y43Fhonr8PVob1I3cd_4&q=Alagbaka+Akure" allowfullscreen>
+          </iframe>
         </div>
         <div class="widfoot_content">
           <div class="flickr">

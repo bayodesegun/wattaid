@@ -1,3 +1,24 @@
+    /*------ Welcome Page  --------*/ 
+    .welcome {
+      padding: 10em 1.5em;
+    }
+
+    .welcome h1{
+      font-size: 80px;
+    }
+
+    .promo-content a {
+      display: inherit;
+    }
+
+    /*----------------------------*/
+
+    /*--------    Posts    -------*/
+
+    #posts-container {
+      background: #eee;
+    }
+
     .no-left-pad {
         padding-left: 0;        
     }
@@ -29,11 +50,6 @@
     .smaller {
       font-size: 14px;
       margin-bottom: 0px;
-    }
-
-    body { 
-      padding-top: 55px; 
-      padding-bottom: 55px;
     }
 
     textarea {

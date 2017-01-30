@@ -1,4 +1,4 @@
-@extends('master')
+@extends('member')
 @section('title', 'Sign Up |')
 
 @section('content')
