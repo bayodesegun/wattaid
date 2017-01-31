@@ -1,10 +1,23 @@
+    .absolute {
+      position: absolute;
+      top: 10%;
+    }
+
     .nav li .dropdown-menu {
       background: #eee;
     }
 
     .navbar {
       margin-bottom: -50px;
-      opacity: 0.6;
+      opacity: 0.8;
+    }
+
+    .wrapper {
+      margin-top: 50px;
+    }
+
+    .dashboard-top {
+      margin-top: 
     }
 
     .red {
