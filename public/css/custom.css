@@ -1,9 +1,44 @@
-    /*------ Welcome Page  --------*/ 
-    .welcome {
-      padding: 10em 1.5em;
+    .nav li .dropdown-menu {
+      background: #eee;
     }
 
-    .welcome h1{
+    .navbar {
+      margin-bottom: -50px;
+      opacity: 0.6;
+    }
+
+    .red {
+      color: #e74c3c;
+    }
+
+    .navbar * {
+      margin: auto; 
+    }
+
+    #watt-text {
+      position: relative;
+    }
+
+    #watt-text b {
+      padding: 30px;
+      background: #fff;
+      border-radius: 50%;
+      opacity: 0.75;
+      margin: auto;
+    }
+
+    #location-info * {
+      display: inline;
+    }
+
+    /*------ Welcome Page  --------*/ 
+    .welcome {
+      padding: 14em 1.5em;
+      background: url('../img/light-bulb.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    .welcome h1 {
       font-size: 80px;
     }
 

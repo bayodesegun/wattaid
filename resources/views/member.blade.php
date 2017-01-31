@@ -26,11 +26,13 @@
 
         <script src="{{asset('js/vendor/modernizr-2.6.2-respond-1.1.0.min.js')}}"></script>
 
+        <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-select.min.css')}}">
+
         <link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
     </head>
     <body>
         
-        @include('shared.navbar')
+        @include('shared.user-navbar')
 
         @yield('content')
 
@@ -63,6 +65,9 @@
         <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
         <script src="{{asset('js/jquery.isotope.min.js')}}"></script>
         <script src="{{asset('js/swipe.js')}}"></script>
+
+        <script src="{{asset('js/bootstrap-select.min.js')}}"></script>
+        
         <script src="{{asset('js/main.js')}}"></script>
     </body>
 </html>

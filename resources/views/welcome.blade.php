@@ -1,16 +1,12 @@
+@section('page', 'welcome')
 @extends('guest')
 @section('title', '')
 
 @section('content')
-    <div class="welcome text-center container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>
-                    WattAid<br>
-                </h1>
-            </div>
-        </div>
-        
+    <div class="welcome text-center">
+        <h1 id="watt-text" class="text-center">
+            <b class="text-center"><span class="red">Watt</span><span>Aid</span></b><br>
+        </h1>
     </div>
 
     <section class="promo_box">
@@ -24,7 +20,7 @@
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <a class="btn btn-large btn-default" href="/register">
-                        <i class="fa fa-shopping-cart"></i>
+                        <i class="fa fa-user-o"></i>
                         Sign Up Now
                     </a>
                 </div>

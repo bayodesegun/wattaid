@@ -20,33 +20,26 @@
           </ul>
       </div>
       @endif
+      <section class="promo_box">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <h2>WattForum</h2>
+              <nav id="breadcrumbs">
+                <ul>
+                  @include('location')
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </section>
       <div class="row">
           <div class="col-md-12">
               <div class="panel panel-default">
                   <div class="panel-body">
                   <!-- show welcome message -->
                       <?php echo $message ?>
-                 
-                  <!-- Show location selector if location is not set or needs to be reset -->                                
-                  <form id="location-form" class="form-inline pull-right @if ($location !='unknown') hidden @endif" role="form" method="POST" action="{{ url('/dashboard') }}">
-                      {{ csrf_field() }}                         
-                      <div class="form-group">
-                          <label for="location" class="hidden control-label">Location</label>                    
-                          <select id="location" type="text" class="form-control ui search dropdown" name="location" required autofocus>
-                            <option value="">Select location (type to search)</option>
-                            <option value="oluyole-ext">Oluyole Extension</option>
-                            <option value="gbagi-ibadan">Gbagi Market Ibadan</option>
-                            <option value="oba-ile-est-akure">Oba-Ile Estate Akure</option>
-                            <option value="texaco-akure">Texaco Akure</option>
-                          </select>
-                          <button type="submit" class="btn btn-primary">Set!</button>
-                      </div> 
-                  </form>
-                  @if ($location != 'unknown')
-                    <div id="location-info-div" class="pull-right">
-                      <b>Location:</b> {{ $location }}. <a href="#" onclick="changeLocation()">Change</a>                  
-                    </div>   
-                  @endif
                   </div>                
               </div>
           </div>
