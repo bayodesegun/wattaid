@@ -20,6 +20,23 @@
       margin-top: 
     }
 
+    #location-form .form-group {
+      margin: 0;
+      display: inline;
+      float: right;
+      height: 110px;
+    }
+
+    #post-title, #message {
+      border: 1px solid #D2D2D2;
+      border-radius: 5px;
+    }
+
+    .post-box input, .post-box textarea {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
     .red {
       color: #e74c3c;
     }

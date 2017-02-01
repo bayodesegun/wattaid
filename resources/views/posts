@@ -2,6 +2,44 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <div class="post-box">
+          @if ($location !='unknown')
+            @if ($user)
+            <form id ="post-form" class="form-horizontal col-md-12" role="form" method="post" action="{{ url('/post/store') }}">
+              {{ csrf_field() }} 
+              
+              <input type="hidden" name="user" value="{{$user}}">
+              <input type="hidden" name="location" value="{{$location}}">
+              <input type="hidden" name="type" value="p">
+              <div class="form-group">
+                  <label for="title" class="hidden">Post Title</label>
+                  <input type="text" class="form-control" name="title" placeholder="Post Title (required)" required>                            
+              </div>
+              <div class="form-group">
+                  <label for="message" class="hidden">Message</label>                                              
+                  <textarea onmouseleave="equalizeContentDivs()" rows="7" id="message" class="form-control" name="message" placeholder="Message - say something (required)" required></textarea>                                              
+              </div>
+              <div class="form-group">                          
+                 <button type="submit" class="btn btn-warning pull-right">Post It!</button>                         
+              </div> 
+            <hr class="hr-compact">                         
+            </form>
+            @else
+              <p class="alert-info">Please <a href="/login">Login</a> or <a href="/register">Register</a> to post.</p>
+            @endif
+            <hr class="hr-compact">
+          <div class="post-listing">              
+              {{ $posts->links() }}
+            @if ($posts->total() < 1)
+              <p class="text-info"> No posts for this location yet. Be the first to say something! </p>
+            @endif
+          </div>
+          
+          @else
+            <p>Please select your Location to view related posts.</p>
+          @endif
+        </div>
+        
         <div class="blog_medium">
           @if ($posts->total() > 0)
             @foreach ($posts as $post)
@@ -44,157 +82,31 @@
         </div>
         
       </div>
+
+      @include('location')
       
       
       <!--Sidebar Widget-->
       <div class="col-xs-12 col-md-4 col-lg-4 col-sm-4">
         <div class="sidebar_widget">
-          <div class="sw_search">
-            <div class="site-search-area">
-              <form method="get" id="site-searchform" action="#">
-                <div>
-                  <input class="input-text" name="s" id="s" placeholder="Enter Search keywords..." type="text" />
-                  <input id="searchsubmit" value="Search" type="submit" />
-                </div>
-              </form>
-            </div><!-- end site search -->
+          <div class="sw_about">
+            <div class="sw_title">
+              <h4>Power Plan For Today</h4>
+              <div class="gDot"></div>
+            </div>
+            <p>Expect light between the hours of ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           
           <div class="sw_categories">
             <div class="sw_title">
-              <h4>Categories</h4>
+              <h4>Your Posts</h4>
               <div class="gDot"></div>
             </div>
             <ul class="arrows_list">
-              <li><a href="#"><i class="fa fa-angle-right"></i> Grapic Design (10)</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> Web Design & Development (25)</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> Photography (29)</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> Custom Illustrations (19)</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> Wordpress Themes(38)</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> Videography (33)</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i>Post 1 Title</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i> Post 2 Title</a></li>
             </ul>
           </div>
-          
-          <div class="sw_about">
-            <div class="sw_title">
-              <h4>Basic Text Widget</h4>
-              <div class="gDot"></div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          
-          
-          <div class="sw_tab">
-            <div id="tabs">
-              <ul class="tabs">  
-                <li class="active"><a href="#tab1">Popular</a></li>
-                <li><a href="#tab2">Recent</a></li>
-                <li class="last"><a href="#tab3"><i class="fa fa-comments-o"></i></a></li>
-              </ul><!-- /# end tab links --> 
-              
-              <div class="tab_container"> 
-                <div id="tab1" class="tab_content"> 
-                
-                  <ul class="recent_posts_list">
-                    <li>
-                      <span><a href="#"><img src="img/content/recent_1.jpg" alt="" /></a></span>
-                      <a href="#">Publishing packag esanse web page editos</a>
-                       <i>October 09, 2013</i> 
-                    </li> 
-                    <li>
-                      <span><a href="#"><img src="img/content/recent_2.jpg" alt="" /></a></span>
-                      <a href="#">Sublishing packag esanse web page editos</a>
-                       <i>October 08, 2013</i> 
-                    </li> 
-                    <li class="last">
-                      <span><a href="#"><img src="img/content/recent_3.jpg" alt="" /></a></span>
-                      <a href="#">Mublishing packag esanse web page editos</a>
-                       <i>October 07, 2013</i> 
-                    </li>
-                  </ul>
-                </div><!-- end popular posts --> 
-                
-                <div id="tab2" class="tab_content">  
-                  <ul class="recent_posts_list">
-                    <li>
-                      <span><a href="#"><img src="img/content/recent_4.jpg" alt="" /></a></span>
-                      <a href="#">Various versions has evolved over the years</a>
-                       <i>October 18, 2013</i> 
-                    </li>
-                    <li>
-                      <span><a href="#"><img src="img/content/recent_5.jpg" alt="" /></a></span>
-                      <a href="#">Rarious versions has evolve over the years</a>
-                       <i>October 17, 2013</i> 
-                    </li>
-                    <li class="last">
-                      <span><a href="#"><img src="img/content/recent_6.jpg" alt="" /></a></span>
-                      <a href="#">Marious versions has evolven over the years</a>
-                       <i>October 16, 2013</i> 
-                    </li>
-                  </ul>
-                   
-                </div><!-- end popular articles --> 
-                
-                <div id="tab3" class="tab_content">  
-                  <ul class="comments">
-                    <li class="com_list">
-                      <a class="post-thumbnail" href="#"><img width="60" height="60" src="img/content/recent_3.jpg" alt="#"></a>
-                      <p><strong><a href="#">Prambose</a> <i>says:</i></strong> Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis </p>
-                    </li>
-                    <li class="com_list">
-                      <a class="post-thumbnail" href="#"><img width="60" height="60" src="img/content/recent_1.jpg" alt="#"></a>
-                      <p><strong><a href="#">Makaroni</a> <i>says:</i></strong> Sapiente delectus, ut aut reiciendis itaque earum rerum hic tenetur a vem.</p>
-                    </li>
-                    <li class="com_list">
-                      <a class="post-thumbnail" href="#"><img width="60" height="60" src="img/content/recent_2.jpg" alt="#"></a>
-                      <p><strong><a href="#">Prambanan</a> <i>says:</i></strong> Tenetur a sapiente delectus, ut aut reiciendis </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="sw_tags">
-            <div class="sw_title">
-              <h4>Tags Widget</h4>
-              <div class="gDot"></div>
-            </div>
-            
-            <ul class="tags">
-              <li><a href="#"><b>business</b></a></li>
-              <li><a href="#">corporate</a></li>
-              <li><a href="#">css3</a></li>
-              <li><a href="#"><b>html5</b></a></li>
-              <li><a href="#">javascript</a></li>
-              <li><a href="#"><b>jquery</b></a></li>
-              <li><a href="#">multipurpose</a></li>
-              <li><a href="#"><b>mysql</b></a></li>
-              <li><a href="#">portfolio</a></li>
-              <li><a href="#">premium</a></li>
-              <li><a href="#">responsive</a></li>
-              <li><a href="#"><b>theme</b></a></li>
-              <li><a href="#"><b>themeforest</b></a></li>
-            </ul>
-          </div>
-          
-          <div class="sw_archives">
-            <div class="sw_title">
-              <h4>Archives</h4>
-              <div class="gDot"></div>
-            </div>
-            <ul class="archives_list">
-              <li><a href="#"><i class="fa fa-angle-right"></i> November 2013</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> October 2013</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> September 2013</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> August 2013</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> July 2013</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> June 2013</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> May 2013</a></li>
-            </ul>
-          </div>
-          
-          
         </div>
       </div>
     </div><!--/.row-->
