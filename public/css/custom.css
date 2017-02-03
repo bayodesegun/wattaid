@@ -16,6 +16,11 @@
       margin-top: 50px;
     }
 
+    .blog {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
     .dashboard-top {
       margin-top: 
     }
@@ -32,9 +37,11 @@
       border-radius: 5px;
     }
 
-    .post-box input, .post-box textarea {
-      margin-top: 5px;
-      margin-bottom: 5px;
+    #post-form .form-group {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     .red {

@@ -44,6 +44,10 @@
         <div class="post-box">
           @if ($location !='unknown')
             @if ($user)
+            <div class="sw_title">
+              <h2>New Post</h4>
+              <div class="gDot"></div>
+            </div>
             <form id ="post-form" class="form-horizontal col-md-12" role="form" method="post" action="{{ url('/post/store') }}">
               {{ csrf_field() }} 
               
@@ -80,32 +84,34 @@
         </div>
         
         <div class="blog_medium">
-          @if ($posts->total() > 0)
-            @foreach ($posts as $post)
-              <article class="post">
-                <div class="post_date">
-                  <span class="day">{{ date ('j', strtotime($post->created_at))}}</span>
-                  <span class="month"> {{ date ('M', strtotime($post->created_at))}} </span>
-                </div>
-                <div class="post_content">
-                  <div class="post_meta">
-                    <h2>
-                      <a href="">{{ $post->post_title }}</a>
-                    </h2>
-                    <div class="metaInfo">
-                      <span><i class="fa fa-user"></i> By <a href="#">@if ($post->user==$user) <b>YOU</b>  @else <b>{{$post->user}} @endif</b></a> </span>
-                      <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                    </div>
+          @if ($posts)
+            @if ($posts->total() > 0)
+              @foreach ($posts as $post)
+                <article class="post">
+                  <div class="post_date">
+                    <span class="day">{{ date ('j', strtotime($post->created_at))}}</span>
+                    <span class="month"> {{ date ('M', strtotime($post->created_at))}} </span>
                   </div>
-                  <p><?php echo $cont = substr(strip_tags($post->content),0,100); if (strlen($cont) < strlen($post->content)) echo "..." ?></p>
-                  <form id="post-details-form" method="post" action="{{ url("post/view") }}">
-                    {{ csrf_field() }} 
-                    <input type="hidden" name="id" value="{{$post->id}}">
-                    <button type="submit" class="btn btn-small btn-default"><b>Read More</b></button>
-                  </form>
-                </div>
-              </article>
-            @endforeach
+                  <div class="post_content">
+                    <div class="post_meta">
+                      <h2>
+                        <a href="">{{ $post->post_title }}</a>
+                      </h2>
+                      <div class="metaInfo">
+                        <span><i class="fa fa-user"></i> By <a href="#">@if ($post->user==$user) <b>YOU</b>  @else <b>{{$post->user}} @endif</b></a> </span>
+                        <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+                      </div>
+                    </div>
+                    <p><?php echo $cont = substr(strip_tags($post->content),0,100); if (strlen($cont) < strlen($post->content)) echo "..." ?></p>
+                    <form id="post-details-form" method="post" action="{{ url("post/view") }}">
+                      {{ csrf_field() }} 
+                      <input type="hidden" name="id" value="{{$post->id}}">
+                      <button type="submit" class="btn btn-small btn-default"><b>Read More</b></button>
+                    </form>
+                  </div>
+                </article>
+              @endforeach
+            @endif
           @endif
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12">
@@ -120,10 +126,7 @@
           </ul>
         </div>
         
-      </div>
-
-      @include('location')
-      
+      </div>      
       
       <!--Sidebar Widget-->
       <div class="col-xs-12 col-md-4 col-lg-4 col-sm-4">
@@ -146,6 +149,9 @@
               <li><a href="#"><i class="fa fa-angle-right"></i> Post 2 Title</a></li>
             </ul>
           </div>
+        </div>
+        <div class="text-left">
+          @include('location')
         </div>
       </div>
     </div><!--/.row-->
