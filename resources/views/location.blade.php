@@ -15,6 +15,6 @@
 </form>
 @if ($location != 'unknown')
   <div id="location-info-div" class="pull-right">
-    <b>Location:</b> {{ $location }}. <a href="#" onclick="changeLocation()">Change</a>                  
+    <em>You're seeing posts based on your current location, {{ $location }}. <a href="#" onclick="changeLocation()">Click here</a> if you're somewhere else.</em>
   </div>   
 @endif
