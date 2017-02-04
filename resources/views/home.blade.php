@@ -1,5 +1,5 @@
-@php $page_title="Dashbord" @endphp
 @extends('member')
+@section('title', 'Dashboard |')
 
 @section('content')
 @if (session('status'))
