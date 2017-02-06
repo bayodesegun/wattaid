@@ -20,8 +20,7 @@
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <a class="btn btn-large btn-default" href="/register">
-                        <i class="fa fa-user-o"></i>
-                        Sign Up Now
+                        <b>Sign Up Now</b>
                     </a>
                 </div>
             </div>

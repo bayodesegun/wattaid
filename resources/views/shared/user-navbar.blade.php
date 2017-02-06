@@ -18,12 +18,7 @@
                 <li><a href="/dashboard">Forum</a></li>
                 <li class="dropdown">
                 @if (Auth::guest())
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member 
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="/register">Register</a></li>
-                        <li><a href="/login">Login</a></li>
-                    </ul>
+                    <a href="/login">Login</a>
                 @else
                     <?php
                         $name_split = explode(" ", Auth::user()->name);

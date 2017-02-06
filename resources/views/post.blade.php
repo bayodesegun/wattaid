@@ -56,9 +56,9 @@
                       <a href=""> {{ $post->post_title }} </a>
                     </h2>
                     <div class="metaInfo">
-                      <span><i class="fa fa-calendar"></i> <a href="#"> {{ date ('M j, Y', strtotime($post->created_at))}} </a> </span>
+                      <span><i class="fa fa-calendar"></i> <a href="#"> {{ date ('F j, Y', strtotime($post->created_at))}} </a> </span>
                       <span><i class="fa fa-user"></i> By <a href="#">@if ($post->user==$user) <b>YOU</b>  @else <b>{{$post->user}} @endif</b></a> </span>
-                      <span><i class="fa fa-tag"></i> <a href="#"> {{$post->location}} </a>,</span>
+                      <span><i class="fa fa-tag"></i> <a href="#"> {{$post->location}} </a></span>
                       <span><i class="fa fa-comments"></i> <a href="#">@if ($comments) {{ $comments->total() }} @endif</a></span>
                     </div>
                   </div>
@@ -88,7 +88,7 @@
                           <span class="initials"><?php echo $initials ?></span>
                           <div class="comment-container">
                             <h4 class="comment-author"><a href="#">@if ($comment->user==$user) <b>YOU</b>  @else <b>{{$comment->user}} @endif</b></a></h4>
-                            <div class="comment-meta"><a href="#" class="comment-date link-style1">{{ date('M j, Y', strtotime($post->created_at)) }}</a></div>
+                            <div class="comment-meta"><a href="#" class="comment-date link-style1">{{ date('F j, Y', strtotime($post->created_at)) }}</a></div>
                             <div class="comment-body">
                               <p> {{$comment->content}} </p>
                             </div>

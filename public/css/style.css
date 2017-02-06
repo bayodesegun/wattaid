@@ -3054,10 +3054,6 @@ BLOG MEDIUM
 	position:relative;
 	-moz-transition:all 0.2s ease-in-out;-ms-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;
 }
-.comment-container:hover {
-	background:#f2f2f2;
-	border-color:#e74c3c;
-}
 .comment-body { margin-bottom:20px; }
 .avatar {
 	float:left;
@@ -3077,12 +3073,12 @@ h4.comment-author {
 	margin:0;
 }
 h4.comment-author a{color:#555}
-#comment-list li .comment-container:hover a{color:#e74c3c;}
+/*#comment-list li .comment-container:hover a{color:#e74c3c;}*/
 #comment-list .comment-meta { margin-bottom:10px; }
 #comment-list .comment-date { font-size:12px; font-style:italic;color:#888;}
-#comment-list li .comment-container:hover .comment-date { color:#e74c3c; }
+/*#comment-list li .comment-container:hover .comment-date { color:#e74c3c; }*/
 /* comment hover effect */  
-#comment-list li .comment-container:hover h4 { color:#e74c3c; }
+/*#comment-list li .comment-container:hover h4 { color:#e74c3c; }*/
 .comment-reply-link { 
 	position:absolute;
 	right:20px;

@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
+            <div id="registration-form" class="panel panel-default">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
@@ -67,6 +67,9 @@
                                     Register
                                 </button>
                             </div>
+                        </div>
+                        <div class="text-center">
+                            <p>Already have an account? <a href="/login">Login.</a></p>
                         </div>
                     </form>
                 </div>
