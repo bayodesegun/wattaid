@@ -3,10 +3,13 @@
     <div class="form-group">
         <label for="location" class="hidden control-label">Location</label>                    
         <select id="location" type="text" class="form-control ui search dropdown selectpicker" name="location" data-live-search="true" title="Select location" data-style="btn-primary" required autofocus>
-          <option value="oluyole-ext" data-tokens= "oluyole extension">Oluyole Extension</option>
-          <option value="gbagi-ibadan" data-tokens= "gbagi ibadan">Gbagi Market Ibadan</option>
-          <option value="oba-ile-est-akure" data-tokens= "oba ile estate akure">Oba-Ile Estate Akure</option>
-          <option value="texaco-akure" data-tokens= "texaco akure">Texaco Akure</option>
+          <option value="Alagbaka, Akure" data-tokens= "alagbaka akure">Alagbaka, Akure</option>
+          <option value="Ijapo, Akure" data-tokens= "ijapo estate akure">Ijapo, Akure</option>
+          <option value="Oba-Ile Area" data-tokens= "Oba-Ile Area">Oba-Ile Area</option>
+          <option value="Ijoka, Akure" data-tokens= "ijoka akure">Ijoka, Akure</option>
+          <option value="Express Area" data-tokens= "express akure">Express Area</option>
+          <option value="Igbatoro, Akure" data-tokens= "igbatoro">Igbatoro, Akure</option>
+          <option value="Oda, Akure" data-tokens= "oda road akure">Oda, Akure</option>
         </select>
         <button type="submit" class="btn btn-default navbar-btn">
           <i class="fa fa-location-arrow" aria-hidden="true"></i>

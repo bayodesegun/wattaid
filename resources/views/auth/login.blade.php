@@ -35,7 +35,7 @@
                         </div>
                         
 
-                        <button type="submit" class="btn btn-lg btn-primary btn-block">
+                        <button type="submit" class="btn btn-lg btn-default btn-block">
                             Login
                         </button>
 

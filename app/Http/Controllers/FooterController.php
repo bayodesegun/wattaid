@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Post;
 
-class HomeController extends Controller
+class FooterController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -30,7 +30,7 @@ class HomeController extends Controller
         $user = null;
 
         // The posts to show, if any
-        $posts = null;
+        $recent_posts = Post::where('type', 'p')->orderBy('created_at', 'desc')->limit(4);
 
         // Handle setting of location...
         if ($loc = $request->input('location')) {
@@ -40,21 +40,11 @@ class HomeController extends Controller
         // Fetch the 'location' session variable to customize user experience
         $location = session('location', 'unknown');
 
-        // Default message for users not logged in
-        $message = 'Welcome Guest, you are not logged in.';
-
         if (Auth::check()) {
             // The user is logged in...
             $user = Auth::user()->name;
-            $message = "Welcome $user, your are logged in.";
-            // TODO: 'remember' user location from profile
-            // $location = Auth::user()->location;
-        }
+        }        
 
-        if ($location != 'unknown') {
-            $posts = Post::where('location', $location)->where('type', 'p')->orderBy('created_at', 'desc')->paginate(10);
-        }
-
-        return view('home', ['message' => $message, 'location' => $location, 'user' => $user, 'posts' => $posts]);
+        return view('welcome.footer', ['location' => $location, 'user' => $user, 'recent_posts' => $recent_posts]);
     }
 }

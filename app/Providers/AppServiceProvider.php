@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
+use App\Post;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $recent_posts = Post::where('type', 'p')->orderBy('created_at', 'desc')->limit(5)->get();
+        View::share('recent_posts', $recent_posts);
     }
 
     /**

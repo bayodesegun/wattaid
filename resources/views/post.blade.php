@@ -75,7 +75,7 @@
                   <div class="gDot"></div>
                 </div>
                 
-                <div id="comment">
+                <div>
                   <ul id="comment-list">
                     @if ($comments->total() > 0)
                       @foreach ($comments as $comment)
@@ -109,7 +109,7 @@
                   <hr class="hr-compact">
                 @else
                   <div class="dividerLatest">
-                    <h4>Leave a comment</h4>
+                    <h4><b>Leave a comment</b></h4>
                     <div class="gDot"></div>
                   </div>
                   
@@ -122,10 +122,10 @@
                     <input type="hidden" name="type" value="c">
                     <div class="form-group">
                         <label for="message" class="hidden">Message</label>                                              
-                        <textarea rows="7" id="message" class="form-control" name="message" placeholder="Comment - join the discussion (required)" required></textarea>                                              
+                        <textarea rows="7" id="comment" class="form-control" name="message" placeholder="Your comment" required></textarea>                                              
                     </div>
                     <div class="form-group">                          
-                       <button type="submit" class="btn btn-large btn-default pull-right">Post It!</button>                         
+                       <button type="submit" class="btn btn-large btn-default pull-right">Post It!</button>                   
                     </div>                         
                   </form>
                 @endif  
@@ -141,17 +141,6 @@
                   <div class="gDot"></div>
                 </div>
                 <p>Expect light between the hours of ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              
-              <div class="sw_categories">
-                <div class="sw_title">
-                  <h4>Your Posts</h4>
-                  <div class="gDot"></div>
-                </div>
-                <ul class="arrows_list">
-                  <li><a href="#"><i class="fa fa-angle-right"></i>Post 1 Title</a></li>
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Post 2 Title</a></li>
-                </ul>
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@
     Please check the following errors:
     <ul>
         @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
+          <li>{{ $error }}</li>
         @endforeach
     </ul>
 </div>
@@ -55,15 +55,15 @@
               <input type="hidden" name="location" value="{{$location}}">
               <input type="hidden" name="type" value="p">
               <div class="form-group">
-                  <label for="title" class="hidden">Post Title</label>
-                  <input id="post-title" type="text" class="form-control" name="title" placeholder="Post Title (required)" required>                            
+                <label for="title" class="hidden">Post Title</label>
+                <input id="post-title" type="text" class="form-control" name="title" placeholder="Post Title" required>
               </div>
               <div class="form-group">
                   <label for="message" class="hidden">Message</label>                                              
-                  <textarea onmouseleave="equalizeContentDivs()" rows="7" id="message" class="form-control" name="message" placeholder="Message - say something (required)" required></textarea>                                              
+                  <textarea onmouseleave="equalizeContentDivs()" rows="7" id="new-post" class="form-control" name="message" placeholder="Message" required></textarea>                                              
               </div>
               <div class="form-group">                          
-                 <button type="submit" class="btn btn-warning pull-right">Post It!</button>                         
+                 <button type="submit" class="btn btn-default pull-right">Post It!</button>                         
               </div> 
             <hr class="hr-compact">                         
             </form>
@@ -85,7 +85,7 @@
         
         <div class="blog_medium">
           @if ($posts)
-            @if ($posts->total() > 0)
+            @if ($posts->total() > 0) 
               @foreach ($posts as $post)
                 <article class="post">
                   <div class="post_date">
@@ -95,11 +95,11 @@
                   <div class="post_content">
                     <div class="post_meta">
                       <h2>
-                        <a href="">{{ $post->post_title }}</a>
+                        <a href="/post/view?id={{$post->id}}">{{ $post->post_title }}</a>
                       </h2>
                       <div class="metaInfo">
                         <span><i class="fa fa-user"></i> By <a href="#">@if ($post->user==$user) <b>YOU</b>  @else <b>{{$post->user}} @endif</b></a> </span>
-                        <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+                        <span><i class="fa fa-comments"></i> <a href="post/view?id={{$post->id}}">...comments</a></span>
                       </div>
                     </div>
                     <p><?php echo $cont = substr(strip_tags($post->content),0,100); if (strlen($cont) < strlen($post->content)) echo "..." ?></p>
@@ -138,17 +138,7 @@
             </div>
             <p>Expect light between the hours of ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          
-          <div class="sw_categories">
-            <div class="sw_title">
-              <h4>Your Posts</h4>
-              <div class="gDot"></div>
-            </div>
-            <ul class="arrows_list">
-              <li><a href="#"><i class="fa fa-angle-right"></i>Post 1 Title</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i> Post 2 Title</a></li>
-            </ul>
-          </div>
+          @include('user_posts')
         </div>
         <div class="text-left">
           @include('location')

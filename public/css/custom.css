@@ -31,7 +31,29 @@
       height: 110px;
     }
 
-    #post-title, #message {
+    #location-form span {
+      color: #fff;
+    }
+
+    #location-form .inner {
+      background: #009688;
+    }
+
+    #location-form li:hover {
+      background: #e74c3c;
+    }
+
+    #location-form .dropdown-toggle span {
+      color: #000;
+    }
+
+    #location-form .dropdown-toggle:hover span {
+      color: #000;
+    }
+
+    #new-post, #post-title, #comment {
+      padding: 10px;
+      font-size: 13px;
       border: 1px solid #D2D2D2;
       border-radius: 5px;
     }
@@ -157,11 +179,11 @@
     }
 
 
-#registration-form {
+.registration-form {
   margin: 70px 0 40px;
 }
 
-#registration-form .form-group {
+.registration-form .form-group {
   margin-top: 5px;
 }
 

@@ -20,14 +20,17 @@
           <h4>Recent Posts</h4>
           <div class="gDot widget"></div>
         </div>
-        <div class="widfoot_content">
-          <ul class="links">
-            <li><i class="fa fa-caret-right"></i> <a href="#">Aenean commodo ligula eget dolor<span>November 07, 2013</span></a></li>
-            <li><i class="fa fa-caret-right"></i> <a href="#">Temporibus autem quibusdam <span>November 05, 2013</span></a></li>
-            <li><i class="fa fa-caret-right"></i> <a href="#">Debitis aut rerum saepe <span>November 03, 2013</span></a></li>
-            <li><i class="fa fa-caret-right"></i> <a href="#">Et voluptates repudiandae <span>November 02, 2013</span></a></li>
-          </ul>
-        </div>
+        @if ($recent_posts)
+          @if (count($recent_posts) > 0)
+            <div class="widfoot_content">
+              <ul class="links">
+                @foreach ($recent_posts as $post)
+                  <li><i class="fa fa-caret-right"></i> <a href="/post/view?id={{$post->id}}"><?php echo $cont = substr(strip_tags($post->post_title),0,30); if (strlen($cont) < strlen($post->post_title)) echo "..." ?><span>{{ date ('F j, Y', strtotime($post->created_at))}}</span></a></li>
+                @endforeach
+              </ul>
+            </div>
+          @endif
+        @endif
       </div>
       <div class="col-sm-3 col-md-3 col-lg-3">
         <div class="dividerWidget">

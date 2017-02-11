@@ -123,6 +123,7 @@ class PostController extends Controller
         else {
             $message = 'Please <a href="/login">Login</a> or <a href="/register">Register</a> to comment.';
         }
+        $posts = Post::where('user', $user)->where('type', 'c');
         $post = Post::where('id', $id)->first();
         $comments = Post::where('post_id', $post->post_id)->where('type', 'c')->orderBy('created_at', 'asc')->paginate(10);
         return view('post', 
@@ -130,7 +131,8 @@ class PostController extends Controller
                 'user' => $user,
                 'post' => $post,
                 'message' => $message,
-                'comments' => $comments
+                'comments' => $comments,
+                'posts' => $posts
             ]);
     }
 
