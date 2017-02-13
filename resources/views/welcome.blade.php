@@ -15,7 +15,7 @@
                 <div class="col-sm-9 col-md-9 col-lg-9">
                     <div class="promo_content no-padd">
                         <h3>Your one-stop site for power information.</h3>
-                        <p>Whatever you need. Wherever you are.</p>
+                        <p>You'r not alone. Whatever you need. Wherever you are.</p>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
@@ -35,21 +35,21 @@
                         <div class="service_3_item">
                             <i class="fa fa-lightbulb-o"></i>
                             <h3>Power Services</h3>
-                            <p>Integer ultrices scelerisque nulla fringilla. Praesent leo massa, ullamcorper venenatis tempor.</p>
+                            <p>Do you need inverters, solar panels, or any power device installed? Scepter Concept Engineering offers all these services, and more.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="service_3_item">
                             <i class="fa fa-briefcase"></i>
                             <h3>Power Information</h3>
-                            <p>Integer ultrices scelerisque nulla fringilla. Praesent leo massa, ullamcorper venenatis tempor.</p>
+                            <p>Get up to date information on the load shedding plan in your area. Interact with other power consumers in your area.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="service_3_item">
                             <i class="fa fa-rocket"></i>
                             <h3>Power Education</h3>
-                            <p>Integer ultrices scelerisque nulla fringilla. Praesent leo massa, ullamcorper venenatis tempor.</p>
+                            <p>Have any challenge with any of your power devices? Post it here. You can post questions, and answer questions.</p>
                         </div>
                     </div>
                 </div>
@@ -82,14 +82,14 @@
                         <div class="recent-item">
                             <figure>
                                 <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/portfolio_1.jpg" alt="" />
+                                    <img src="img/portfolio/work_1.png" alt="" />
                                     <a href="img/portfolio/full/portfolio_1.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
                                     <a href="portfolio_single.html" class="hover-link">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
                                 <figcaption class="item-description">
-                                    <h5>Touch and Swipe</h5>
+                                    <h5>Inverters</h5>
                                     <span>Technology</span>
                                 </figcaption>
                             </figure>
@@ -101,12 +101,46 @@
                         <div class="recent-item">
                             <figure>
                                 <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/portfolio_2.jpg" alt="" />
+                                    <img src="img/portfolio/work_2.png" alt="" />
                                     <a href="img/portfolio/full/portfolio_2.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
                                     <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
                                 </div>
                                 <figcaption class="item-description">
-                                    <h5>Touch and Swipe</h5>
+                                    <h5>Inverters</h5>
+                                    <span>Installation</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <!-- Recent Work Item -->
+                    <li class="col-sm-3 col-md-3 col-lg-3">
+                        <div class="recent-item">
+                            <figure>
+                                <div class="bwWrapper touching medium">
+                                    <img src="img/portfolio/work_3.png" alt="" />
+                                    <a href="img/portfolio/full/portfolio_3.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
+                                    <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                </div>
+                                <figcaption class="item-description">
+                                    <h5>High Power Inverters</h5>
+                                    <span>Technology</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    
+                    <!-- Recent Work Item -->
+                    <li class="col-sm-3 col-md-3 col-lg-3">
+                        <div class="recent-item">
+                            <figure>
+                                <div class="bwWrapper touching medium">
+                                    <img src="img/portfolio/work_4.png" alt="" />
+                                    <a href="img/portfolio/full/portfolio_4.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
+                                    <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                </div>
+                                <figcaption class="item-description">
+                                    <h5>Solar Power</h5>
                                     <span>Technology</span>
                                 </figcaption>
                             </figure>
@@ -118,97 +152,13 @@
                         <div class="recent-item">
                             <figure>
                                 <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/portfolio_3.jpg" alt="" />
-                                    <a href="img/portfolio/full/portfolio_3.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
-                                    <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
-                                </div>
-                                <figcaption class="item-description">
-                                    <h5>Working in Shop</h5>
-                                    <span>Photography</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </li>
-                    
-                    <!-- Recent Work Item -->
-                    <li class="col-sm-3 col-md-3 col-lg-3">
-                        <div class="recent-item">
-                            <figure>
-                                <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/portfolio_4.jpg" alt="" />
-                                    <a href="img/portfolio/full/portfolio_4.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
-                                    <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
-                                </div>
-                                <figcaption class="item-description">
-                                    <h5>Sailing</h5>
-                                    <span>Photography</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </li>
-
-                    <!-- Recent Work Item -->
-                    <li class="col-sm-3 col-md-3 col-lg-3">
-                        <div class="recent-item">
-                            <figure>
-                                <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/portfolio_5.jpg" alt="" />
+                                    <img src="img/portfolio/work_5.png" alt="" />
                                     <a href="img/portfolio/full/portfolio_5.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
                                     <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
                                 </div>
                                 <figcaption class="item-description">
-                                    <h5>House</h5>
-                                    <span>Architecture</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </li>
-
-                    <!-- Recent Work Item -->
-                    <li class="col-sm-3 col-md-3 col-lg-3">
-                        <div class="recent-item">
-                            <figure>
-                                <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/portfolio_1.jpg" alt="" />
-                                    <a href="portfolio_single.html" class="hover-link alone"><i class="fa fa-link"></i></a>
-                                </div>
-                                <figcaption class="item-description">
-                                    <h5>Nevide</h5>
-                                    <span>Motion</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </li>
-                    
-                    <!-- Recent Work Item -->
-                    <li class="col-sm-3 col-md-3 col-lg-3">
-                        <div class="recent-item">
-                            <figure>
-                                <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/portfolio_2.jpg" alt="" />
-                                    <a href="img/portfolio/full/portfolio_2.jpg" class="hover-zoom mfp-image"><i class="fa fa-search"></i></a>
-                                    <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
-                                </div>
-                                <figcaption class="item-description">
-                                    <h5>Sunrise</h5>
-                                    <span>Photography</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </li>
-                    
-                    <!-- Recent Work Item -->
-                    <li class="col-sm-3 col-md-3 col-lg-3">
-                        <div class="recent-item">
-                            <figure>
-                                <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/portfolio_3.jpg" alt="" />
-                                    <a href="img/portfolio/full/portfolio_3.jpg" class="hover-zoom mfp-image"><i class="fa fa-search"></i></a>
-                                    <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
-                                </div>
-                                <figcaption class="item-description">
-                                    <h5>Vena Branding</h5>
-                                    <span>Identity</span>
+                                    <h5>Power Banks</h5>
+                                    <span>Technology</span>
                                 </figcaption>
                             </figure>
                         </div>
@@ -239,31 +189,31 @@
                         <div class="tab_container"> 
                             <div id="tab1" class="tab_content"> 
                                 <h3>Excellent Power Services</h3>
-                                <p>Scepter Concept Engineering. Ut lacus sapien, placerat a ornare nec, elementum sit amet felis. Maecenas pretium lorem hendrerit eros sagittis fermentum. Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo ad gravida.</p>
+                                <p>Scepter Concept Engineering provices products such as off- grid inverters (on-line and off-line inverter), Solar Panels with charge controllers of different ranges, Electrical wiring and installation of electrical panels.</p>
                                 <ul class="list_style circle">
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Donec convallis, metus nec tempus aliquet</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Aenean commodo ligula eget dolor</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Cum sociis natoque penatibus mag dis parturient</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Competent Engineers and Technicians.</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Top-notch testing equipment.</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Strict measures towards achieving <b>zero fault occurences.</b></a></li>
                                 </ul>
                             </div><!-- end popular posts --> 
                             
                             <div id="tab2" class="tab_content">  
                                 <h3>Up to date information</h3>
-                                <p>Fusce lacinia tempor malesuada. Ut lacus sapien, placerat a ornare nec, elementum sit amet felis. Maecenas pretium lorem hendrerit eros sagittis fermentum. Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo ad gravida.</p>
+                                <p>The site is daily updated with information from users and the power distribution companies. You can get to know the daily power plan for your area.</p>
                                 <ul class="list_style">
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Donec convallis, metus nec tempus aliquet</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Aenean commodo ligula eget dolor</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Cum sociis natoque penatibus mag dis parturient</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Daily power plan.</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Help on power problems.</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Interact with other power users.</a></li>
                                 </ul>
                             </div><!-- end popular articles --> 
                             
                             <div id="tab3" class="tab_content">  
                                 <h3>Online interaction with other users</h3>
-                                <p>Fusce lacinia tempor malesuada. Ut lacus sapien, placerat a ornare nec, elementum sit amet felis. Maecenas pretium lorem hendrerit eros sagittis fermentum. Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo ad gravida.</p>
+                                <p><a href="/register">Create an account</a>, and you'll see have access to posts from all power users in your area. You can post questions or observations, as well as give answers to questions.</p>
                                 <ul class="list_style square">
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Donec convallis, metus nec tempus aliquet</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Aenean commodo ligula eget dolor</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Cum sociis natoque penatibus mag dis parturient</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Make and view posts based on location.</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Give or receive help in real time.</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> You are not alone</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -275,16 +225,16 @@
                         <h4>Featured Posts</h4>
                         <div class="gDot"></div>
                     </div>
-                    <p>Cras mattis consectetur purus sit amet fermen. Lorem ipsum dolor sit amet, consec adipiscing elit. Maecenas sed diam eget risus varius bland sit amet non fringilla ullamcorper magna. Nulla eu mi magna. Etiam suscipit commodo ad gravida.</p>
-                    <ul class="list_style circle">
-                        <li><a href="#"><i class="fa fa-angle-right"></i> Donec convallis, metus nec tempus aliquet</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i> Aenean commodo ligula eget dolor</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i> Cum sociis natoque penatibus mag ipsum</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet cons adipiscing</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i> Accumsan vulputate faucibus turpis dictum</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i> Nullam ultrices eros accumsan vulputate</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i> Nunc aliquet tincidunt metus sit amet</a></li>
-                    </ul>
+                    <p>This site is updated every minute with posts and comments from power users across the nation. Stay up-to-date with the most recent happenings in the power sector across the country!</p>
+                    @if ($featured_posts)
+                        <ul class="list_style circle">
+                            @if (count($featured_posts) > 0)
+                                @foreach ($featured_posts as $featured_post)
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> <a href="/post/view?id={{$featured_post->id}}"><?php echo $cont = substr(strip_tags($featured_post->post_title),0,40); if (strlen($cont) < strlen($featured_post->post_title)) echo "..." ?></a></li>
+                                @endforeach
+                            @endif 
+                        </ul>   
+                    @endif
                 </div>
             </div>
         </div>
