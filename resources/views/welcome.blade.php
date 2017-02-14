@@ -15,7 +15,7 @@
                 <div class="col-sm-9 col-md-9 col-lg-9">
                     <div class="promo_content no-padd">
                         <h3>Your one-stop site for power information.</h3>
-                        <p>You'r not alone. Whatever you need. Wherever you are.</p>
+                        <p>You're not alone. Whatever you need. Wherever you are.</p>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
