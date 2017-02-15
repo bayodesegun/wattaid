@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">WattAid</a>
+            <a href="/"><img src="img/wattaid_logo.png" class="logo"></a>
         </div>
 
         <!-- Navbar Right -->

@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
             <div class="account-wall">
-                <img src="" alt="Logo" class="profile-img">
+                <img src="img/favicon.png" alt="Logo" class="profile-img">
                 <div class="form-signin">
                     <form role="form" method="POST" action="{{ url('/login') }}">
                         {{ csrf_field() }}

@@ -136,7 +136,11 @@
               <h4>Power Plan For Today</h4>
               <div class="gDot"></div>
             </div>
-            <p>Expect light between the hours of ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <ul class="tabs">  
+                <li class="active"><a href="#tab1">Morning</a></li>
+                <li><a href="#tab2">Afternoon</a></li>
+                <li class="last"><a href="#tab3">Night</a></li>
+            </ul><!-- /# end tab links -->
           </div>
           @include('user_posts')
         </div>

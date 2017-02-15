@@ -1,182 +1,187 @@
-    .absolute {
-      position: absolute;
-      top: 10%;
-    }
+.logo {
+  height: 43px;
+  padding: 1px 0;
+}
 
-    .nav li .dropdown-menu {
-      background: #eee;
-    }
+.absolute {
+  position: absolute;
+  top: 10%;
+}
 
-    .navbar {
-      margin-bottom: -50px;
-    }
+.nav li .dropdown-menu {
+  background: #eee;
+}
 
-    .wrapper {
-      margin-top: 50px;
-    }
+.navbar {
+  margin-bottom: -50px;
+}
 
-    .blog {
-      margin-top: 0;
-      padding-top: 0;
-    }
+.wrapper {
+  margin-top: 50px;
+}
 
-    .dashboard-top {
-      margin-top: 
-    }
+.blog {
+  margin-top: 0;
+  padding-top: 0;
+}
 
-    #location-form .form-group {
-      margin: 0;
-      display: inline;
-      float: right;
-      height: 110px;
-    }
+.dashboard-top {
+  margin-top: 
+}
 
-    #location-form span {
-      color: #fff;
-    }
+#location-form .form-group {
+  margin: 0;
+  display: inline;
+  float: right;
+  height: 110px;
+}
 
-    #location-form .inner {
-      background: #009688;
-    }
+#location-form span {
+  color: #fff;
+}
 
-    #location-form li:hover {
-      background: #e74c3c;
-    }
+#location-form .inner {
+  background: #009688;
+}
 
-    #location-form .dropdown-toggle span {
-      color: #000;
-    }
+#location-form li:hover {
+  background: #e74c3c;
+}
 
-    #location-form .dropdown-toggle:hover span {
-      color: #000;
-    }
+#location-form .dropdown-toggle span {
+  color: #000;
+}
 
-    #new-post, #post-title, #comment {
-      padding: 10px;
-      font-size: 13px;
-      border: 1px solid #D2D2D2;
-      border-radius: 5px;
-    }
+#location-form .dropdown-toggle:hover span {
+  color: #000;
+}
 
-    #post-form .form-group, #comment-form .form-group {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
+#new-post, #post-title, #comment {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #D2D2D2;
+  border-radius: 5px;
+}
 
-    .red {
-      color: #e74c3c;
-    }
+#post-form .form-group, #comment-form .form-group {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
-    .navbar * {
-      margin: auto; 
-    }
+.red {
+  color: #e74c3c;
+}
 
-    #watt-text {
-      position: relative;
-    }
+.navbar * {
+  margin: auto; 
+}
 
-    #watt-text b {
-      padding: 30px;
-      background: #fff;
-      border-radius: 50%;
-      opacity: 0.75;
-      margin: auto;
-    }
+#watt-text {
+  position: relative;
+}
 
-    #location-info * {
-      display: inline;
-    }
+#watt-text b {
+  padding: 30px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.75;
+  margin: auto;
+}
 
-    .initials {
-      color: #E74C3C;
-      font-size: 30px;
-      font-weight: bolder;
-      margin: auto;
-    }
+#location-info * {
+  display: inline;
+}
 
-    /*------ Welcome Page  --------*/ 
-    .welcome {
-      padding: 14em 1.5em;
-      background: url('../img/light-bulb.jpg') no-repeat;
-      background-size: cover;
-    }
+.initials {
+  color: #E74C3C;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: auto;
+}
 
-    .welcome h1 {
-      font-size: 80px;
-    }
+/*------ Welcome Page  --------*/ 
+.welcome {
+  padding: 14em 1.5em;
+  background: url('../img/light-bulb.jpg') no-repeat;
+  background-size: cover;
+}
 
-    .promo-content a {
-      display: inherit;
-    }
+.welcome h1 {
+  font-size: 80px;
+}
 
-    /*----------------------------*/
+.promo-content a {
+  display: inherit;
+}
 
-    /*--------    Posts    -------*/
+/*----------------------------*/
 
-    #posts-container {
-      background: #eee;
-    }
+/*--------    Posts    -------*/
 
-    .no-left-pad {
-        padding-left: 0;        
-    }
+#posts-container {
+  background: #eee;
+}
 
-    .no-right-pad {
-        padding-right: 0;        
-    }
-    
-    .alert, .panel, .post-title {
-        margin-bottom: 0;
-    }
+.no-left-pad {
+    padding-left: 0;        
+}
 
-    .post-title {      
-      font-size: 14px;      
-    }
-    
-    .post-credit-in-caps {
-      font-size: 10px;
-      color: brown;
-      margin-bottom: 1px !important;
-      text-transform: uppercase;
-    }
+.no-right-pad {
+    padding-right: 0;        
+}
 
-    .hr-compact {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
+.alert, .panel, .post-title {
+    margin-bottom: 0;
+}
 
-    .smaller {
-      font-size: 14px;
-      margin-bottom: 0px;
-    }
+.post-title {      
+  font-size: 14px;      
+}
 
-    textarea {
-      resize: vertical;
-    }
+.post-credit-in-caps {
+  font-size: 10px;
+  color: brown;
+  margin-bottom: 1px !important;
+  text-transform: uppercase;
+}
 
-    #middle-content {
-      display: table;
-      width:100%;
-    }
+.hr-compact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-    #navigation  {
-      margin-top: 1px;
-      margin-bottom: 5px;
-      background: white;
-      color: black;
-      padding-left: 2px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      border-radius: 3px;
-    }
+.smaller {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
 
-    #post-details-link {
-      margin:0px;
-      padding:0px;
-      border:0px;
-    }
+textarea {
+  resize: vertical;
+}
+
+#middle-content {
+  display: table;
+  width:100%;
+}
+
+#navigation  {
+  margin-top: 1px;
+  margin-bottom: 5px;
+  background: white;
+  color: black;
+  padding-left: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 3px;
+}
+
+#post-details-link {
+  margin:0px;
+  padding:0px;
+  border:0px;
+}
 
 
 .registration-form {
