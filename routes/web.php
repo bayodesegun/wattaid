@@ -10,6 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+
 // Specify page to render on visiting the root URL
 Route::get('/', function () {
     return view('welcome');
@@ -32,3 +33,7 @@ Route::post('post/view', 'PostController@show');
 
 // Handle GET requests for a particular post on posts table
 Route::get('post/view', 'PostController@show');
+
+Route::get('importExport', 'MaatwebsiteController@importExport');
+Route::get('downloadExcel/{type}', 'MaatwebsiteController@downloadExcel');
+Route::post('importExcel', 'MaatwebsiteController@importExcel');
