@@ -99,6 +99,11 @@
   font-size: 30px;
   font-weight: bolder;
   margin: auto;
+
+}
+
+.tab_content ul li img {
+  height: 45px;
 }
 
 /*------ Welcome Page  --------*/ 

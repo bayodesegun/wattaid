@@ -83,6 +83,33 @@ class HomeController extends Controller
             $hr22 = DB::select("SELECT hour22 FROM powerplans WHERE location = '$precise_location $day'");
             $hr23 = DB::select("SELECT hour23 FROM powerplans WHERE location = '$precise_location $day'");
         }
+        else
+        {
+            $hr0 = null;
+            $hr1 = null;
+            $hr2 = null;
+            $hr3 = null;
+            $hr4 = null;
+            $hr5 = null;
+            $hr6 = null;
+            $hr7 = null;
+            $hr8 = null;
+            $hr9 = null;
+            $hr10 = null;
+            $hr11 = null;
+            $hr12 = null;
+            $hr13 = null;
+            $hr14 = null;
+            $hr15 = null;
+            $hr16 = null;
+            $hr17 = null;
+            $hr18 = null;
+            $hr19 = null;
+            $hr20 = null;
+            $hr21 = null;
+            $hr22 = null;
+            $hr23 = null;
+        }
 
         return view('home',
             [
