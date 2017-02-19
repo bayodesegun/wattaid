@@ -14,32 +14,37 @@ class CreatePowerplansTable extends Migration
     public function up()
     {
         Schema::create('powerplans', function(Blueprint $table) {
-            $table->increments('id');
-            $table->string('location');
-            $table->string('hour0');
-            $table->string('hour1');
-            $table->string('hour2');
-            $table->string('hour3');
-            $table->string('hour4');
-            $table->string('hour5');
-            $table->string('hour6');
-            $table->string('hour7');
-            $table->string('hour8');
-            $table->string('hour9');
-            $table->string('hour10');
-            $table->string('hour11');
-            $table->string('hour12');
-            $table->string('hour13');
-            $table->string('hour14');
-            $table->string('hour15');
-            $table->string('hour16');
-            $table->string('hour17');
-            $table->string('hour18');
-            $table->string('hour19');
-            $table->string('hour20');
-            $table->string('hour21');
-            $table->string('hour22');
-            $table->string('hour23');
+            $table->engine = 'InnoDB';
+
+            $table->bigIncrements('id');
+            $table->date('month')->index();
+            $table->string('day', 3)->index();
+            $table->string('location', 100)->index();
+            $table->string('hour0', 1)->nullable();
+            $table->string('hour1', 1)->nullable();
+            $table->string('hour2', 1)->nullable();
+            $table->string('hour3', 1)->nullable();
+            $table->string('hour4', 1)->nullable();
+            $table->string('hour5', 1)->nullable();
+            $table->string('hour6', 1)->nullable();
+            $table->string('hour7', 1)->nullable();
+            $table->string('hour8', 1)->nullable();
+            $table->string('hour9', 1)->nullable();
+            $table->string('hour10', 1)->nullable();
+            $table->string('hour11', 1)->nullable();
+            $table->string('hour12', 1)->nullable();
+            $table->string('hour13', 1)->nullable();
+            $table->string('hour14', 1)->nullable();
+            $table->string('hour15', 1)->nullable();
+            $table->string('hour16', 1)->nullable();
+            $table->string('hour17', 1)->nullable();
+            $table->string('hour18', 1)->nullable();
+            $table->string('hour19', 1)->nullable();
+            $table->string('hour20', 1)->nullable();
+            $table->string('hour21', 1)->nullable();
+            $table->string('hour22', 1)->nullable();
+            $table->string('hour23', 1)->nullable();
+            
             $table->timestamps();
         });
     }
@@ -51,6 +56,6 @@ class CreatePowerplansTable extends Migration
      */
     public function down()
     {
-        Schema::drop("powerplans");
+        Schema::dropIfExists("powerplans");
     }
 }
