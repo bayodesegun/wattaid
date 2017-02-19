@@ -140,9 +140,10 @@
               @endif
               <div class="gDot"></div>
             </div>
+            @if ($powerPlan)
             <ul class="tabs">  
                 <li class="active"><a href="#tab1">0000</a></li>
-                <li><a href="#tab2">0800</a></li>
+                <li><a href="#tab2">0600</a></li>
                 <li><a href="#tab3">1200</a></li>
                 <li class="last"><a href="#tab4">1800</a></li>
             </ul><!-- /# end tab links -->
@@ -150,49 +151,51 @@
             <div class="tab_container"> 
                 <div id="tab1" class="tab_content"> 
                     <ul class="list_style circle">
-                        <li>12:00 - 01:00 AM: @if ($hr0) @foreach ($hr0 as $hour) <b>@if($hour->hour0 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>01:00 - 02:00 AM: @if ($hr1) @foreach ($hr1 as $hour) <b>@if($hour->hour1 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>02:00 - 03:00 AM: @if ($hr2) @foreach ($hr2 as $hour) <b>@if($hour->hour2 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>03:00 - 04:00 AM: @if ($hr3) @foreach ($hr3 as $hour) <b>@if($hour->hour3 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>04:00 - 05:00 AM: @if ($hr4) @foreach ($hr4 as $hour) <b>@if($hour->hour4 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>05:00 - 06:00 AM: @if ($hr5) @foreach ($hr5 as $hour) <b>@if($hour->hour5 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
+                        <li>12:00 - 01:00 AM: @if($powerPlan->hour0)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>01:00 - 02:00 AM: @if($powerPlan->hour1)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>02:00 - 03:00 AM: @if($powerPlan->hour2)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>03:00 - 04:00 AM: @if($powerPlan->hour3)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>04:00 - 05:00 AM: @if($powerPlan->hour4)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>05:00 - 06:00 AM: @if($powerPlan->hour5)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
                     </ul>
                 </div>
                 
                 <div id="tab2" class="tab_content">  
                     <ul class="list_style circle">
-                        <li>06:00 - 07:00 AM: @if ($hr6) @foreach ($hr6 as $hour) <b>@if($hour->hour6 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>07:00 - 08:00 AM: @if ($hr7) @foreach ($hr7 as $hour) <b>@if($hour->hour7 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>08:00 - 09:00 AM: @if ($hr8) @foreach ($hr8 as $hour) <b>@if($hour->hour8 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>)9:00 - 10:00 AM: @if ($hr9) @foreach ($hr9 as $hour) <b>@if($hour->hour9 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>10:00 - 11:00 AM: @if ($hr10) @foreach ($hr10 as $hour) <b>@if($hour->hour10 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>11:00 - 12:00 NN: @if ($hr11) @foreach ($hr11 as $hour) <b>@if($hour->hour11 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
+                        <li>06:00 - 07:00 AM: @if($powerPlan->hour6)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>07:00 - 08:00 AM: @if($powerPlan->hour7)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>08:00 - 09:00 AM: @if($powerPlan->hour8)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>09:00 - 10:00 AM: @if($powerPlan->hour9)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>10:00 - 11:00 AM: @if($powerPlan->hour10)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>11:00 - 12:00 NN: @if($powerPlan->hour11)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
                     </ul>
                 </div>
                 
                 <div id="tab3" class="tab_content">  
                     <ul class="list_style circle">
-                        <li>12:00 - 01:00 PM: @if ($hr12) @foreach ($hr12 as $hour) <b>@if($hour->hour12 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>01:00 - 02:00 PM: @if ($hr13) @foreach ($hr13 as $hour) <b>@if($hour->hour13 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>02:00 - 03:00 PM: @if ($hr14) @foreach ($hr14 as $hour) <b>@if($hour->hour14 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>03:00 - 04:00 PM: @if ($hr15) @foreach ($hr15 as $hour) <b>@if($hour->hour15 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>04:00 - 05:00 PM: @if ($hr16) @foreach ($hr16 as $hour) <b>@if($hour->hour16 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>05:00 - 06:00 PM: @if ($hr17) @foreach ($hr17 as $hour) <b>@if($hour->hour17 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
+                        <li>12:00 - 01:00 PM: @if($powerPlan->hour12)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>01:00 - 02:00 PM: @if($powerPlan->hour13)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>02:00 - 03:00 PM: @if($powerPlan->hour14)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>03:00 - 04:00 PM: @if($powerPlan->hour15)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>04:00 - 05:00 PM: @if($powerPlan->hour16)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>05:00 - 06:00 PM: @if($powerPlan->hour17)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
                     </ul>
                 </div>
 
                 <div id="tab4" class="tab_content">  
                     <ul class="list_style circle">
-                        <li>06:00 - 07:00 PM: @if ($hr18) @foreach ($hr18 as $hour) <b>@if($hour->hour18 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>07:00 - 08:00 PM: @if ($hr19) @foreach ($hr19 as $hour) <b>@if($hour->hour19 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>08:00 - 09:00 PM: @if ($hr20) @foreach ($hr20 as $hour) <b>@if($hour->hour20 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>09:00 - 10:00 PM: @if ($hr21) @foreach ($hr21 as $hour) <b>@if($hour->hour21  == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>10:00 - 11:00 PM: @if ($hr22) @foreach ($hr22 as $hour) <b>@if($hour->hour22 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
-                        <li>11:00 - 12:00 AM: @if ($hr23) @foreach ($hr23 as $hour) <b>@if($hour->hour23 == 'ON') <img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</b> @endforeach @endif</li>
+                        <li>06:00 - 07:00 PM: @if($powerPlan->hour18)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>07:00 - 08:00 PM: @if($powerPlan->hour19)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>08:00 - 09:00 PM: @if($powerPlan->hour20)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>09:00 - 10:00 PM: @if($powerPlan->hour21)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>10:00 - 11:00 PM: @if($powerPlan->hour22)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
+                        <li>11:00 - 12:00 AM: @if($powerPlan->hour23)<img src="img/on_bulb.jpg"> @else <img src="img/off_bulb.jpg"> @endif</li>
                     </ul>
                 </div>
             </div>
-
+            @else 
+              @unless($location=='unknown') <p> Power plan will be available shortly.</p>@endunless
+            @endif 
           </div>
           @include('user_posts')
         </div>
