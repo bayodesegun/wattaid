@@ -1,6 +1,7 @@
-<? php
+<?php
 
 namespace App;
+
 use Illuminate\Database\Eloquent\Model;
 
 class Powerplan extends Model
