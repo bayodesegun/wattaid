@@ -1,7 +1,7 @@
 day,location,hour0,hour1,hour2,hour3,hour4,hour5,hour6,hour7,hour8,hour9,hour10,hour11,hour12,hour13,hour14,hour15,hour16,hour17,hour18,hour19,hour20,hour21,hour22,hour23
 Mon,ALAGBAKA,,,,,,,,,X,X,X,,,,X,X,X,,,,,,,
 Mon,IJAPO,X,X,X,X,X,,,,,,,,,,,,,,,,,,,X
-Mon,IJOKA MONDAY,,,,,,,,,,,,X,X,X,,,,,,,,,,
+Mon,IJOKA,,,,,,,,,,,,X,X,X,,,,,,,,,,
 Mon,OBA-ILE,,,,,,,,,,,,,,,,,,X,X,X,,,,
 Mon,EXPRESS,,,,,,X,X,X,,,,,,,,,,,,,,,,
 Mon,IGBATORO,,,,,,,,,,,,X,X,X,,,,,,,,,,
@@ -9,7 +9,7 @@ Mon,IDANRE,,,,,,,,,,X,X,X,,,,,,,,,,X,X,
 Mon,ODA,,,,,,,,,,,,,,,,,,,,,X,X,X,
 Tue,ALAGBAKA,,,,,,,,,X,X,X,,,,X,X,X,,,,,,,
 Tue,IJAPO,X,X,X,X,X,,,,,,,,,,,,,,,,,,,X
-Tue,IJOKA MONDAY,,,,,,X,X,X,,,,,,,,,,,,,,,,
+Tue,IJOKA,,,,,,X,X,X,,,,,,,,,,,,,,,,
 Tue,OBA-ILE,,,,,,,,,,,,X,X,X,,,,,,,,,,
 Tue,EXPRESS,,,,,,,,,,,,,,,,,,,,,X,X,X,
 Tue,IGBATORO,,,,,,,,,,,,,,,,,,X,X,X,,,,
@@ -17,7 +17,7 @@ Tue,IDANRE,X,X,,,,,,,,,,,,,,X,X,X,,,,,,
 Tue,ODA,,,,,,,,,,,,X,X,X,,,,X,X,X,,,,
 Wed,ALAGBAKA,,,,,,,,,X,X,X,,,,X,X,X,,,,,,,
 Wed,IJAPO,,,X,X,X,X,X,X,,,,,,,,,,,,,,,,
-Wed,IJOKA MONDAY,,,,,,,,,,,,X,X,X,,,,,,,X,X,X,
+Wed,IJOKA,,,,,,,,,,,,X,X,X,,,,,,,X,X,X,
 Wed,OBA-ILE,,,X,X,X,,,,,,,,,,,,,,,,,,,
 Wed,EXPRESS,,,,,,,,,,,,X,X,X,,,,,,,,,,
 Wed,IGBATORO,,,,,,,,,X,X,X,,,,,,,X,X,X,,,,
@@ -25,7 +25,7 @@ Wed,IDANRE,,,,,,,,,,,,,X,X,X,,,,,,,,,
 Wed,ODA,X,X,,,,,,,,,,,,,,,,,,,,,,X
 Thu,ALAGBAKA,,,,,,,,,X,X,X,,,,X,X,X,,,,,,,
 Thu,IJAPO,X,X,X,X,X,,,,,,,,,,,,,,,,,,,X
-Thu,IJOKA MONDAY,,,,,,X,X,X,,,,,,,,,,,,,,,,
+Thu,IJOKA,,,,,,X,X,X,,,,,,,,,,,,,,,,
 Thu,OBA-ILE,,,,,,,,,,,,X,X,X,,,,,,,,,,
 Thu,EXPRESS,,,,,,,,,,,,,,,,,,X,X,X,,,,
 Thu,IGBATORO,,,X,X,X,,,,,,,X,X,X,,,,,,,,,,
@@ -33,7 +33,7 @@ Thu,IDANRE,,,,,,,,,,X,X,X,,,,,,,,,,X,X,
 Thu,ODA,,,,,,,,,,,,,,,,,,,,,X,X,X,
 Fri,ALAGBAKA,,,,,,,,,X,X,X,,,,X,X,X,,,,,,,
 Fri,IJAPO,X,X,X,X,X,,,,,,,,,,,,,,,,,,,X
-Fri,IJOKA MONDAY,X,X,,,,,,,,,,,,,,,,,,,,,,X
+Fri,IJOKA,X,X,,,,,,,,,,,,,,,,,,,,,,X
 Fri,OBA-ILE,,,,,,,,,,,,,,,,,,,,,X,X,X,
 Fri,EXPRESS,,,,,,,,,,,,X,X,X,,,,,,,,,,
 Fri,IGBATORO,,,,,,,,,,,,,,,,,,X,X,X,,,,
@@ -41,7 +41,7 @@ Fri,IDANRE,,,,X,X,,,,,,,,,,,X,X,X,,,,,,
 Fri,ODA,,,,,,X,X,X,,,,X,X,X,,,,,,,,,,
 Sat,ALAGBAKA,,,,,,,,,,,,,,,X,X,X,,,,X,X,X,
 Sat,IJAPO,,,X,X,X,X,X,X,,,,,,,,,,,,,,,,
-Sat,IJOKA MONDAY,,,,,,,,,X,X,X,X,X,X,,,,,,,,,,
+Sat,IJOKA,,,,,,,,,X,X,X,X,X,X,,,,,,,,,,
 Sat,OBA-ILE,X,X,,,,,,,,,,,,,,,,,,,,,,X
 Sat,EXPRESS,,,X,X,X,,,,,,,,,,,,,X,X,X,,,,
 Sat,IGBATORO,,,,,,X,X,X,,,,,,,,,,,,,,,,
@@ -49,7 +49,7 @@ Sat,IDANRE,X,X,,,,,,,,,,,X,X,X,,,,,,,,,
 Sat,ODA,,,,,,,,,,,,X,X,X,,,,,,,,,,
 Sun,ALAGBAKA,,,X,X,X,,,,,,,,,,X,X,X,,,,,,,
 Sun,IJAPO,X,X,X,X,X,,,,,,,,,,,,,,,,,,,X
-Sun,IJOKA MONDAY,X,X,,,,,,,,,,,,,,,,X,X,X,,,,X
+Sun,IJOKA,X,X,,,,,,,,,,,,,,,,X,X,X,,,,X
 Sun,OBA-ILE,,,,,,,,,X,X,X,X,X,X,,,,,,,,,,
 Sun,EXPRESS,,,,,,,,,,,,X,X,X,,,,,,,,,,
 Sun,IGBATORO,,,,,,,,,,,,,,,,,,,,,X,X,X,

@@ -8,6 +8,7 @@ use DB;
 use Excel;
 
 use App\Powerplan;
+
 class MaatwebsiteController extends Controller
 {
   public function importExport()
@@ -50,6 +51,6 @@ class MaatwebsiteController extends Controller
         }*/
       }
     }
-    return redirect('/dashboard');
+    return redirect('/dashboard')->with('status', 'File uploaded successfully.');
   }
 }

@@ -10,7 +10,7 @@
     <form style="border: 4px solid #a1a1a1;margin-top: 15px;padding: 10px;" action="{{ URL::to('importExcel') }}" class="form-horizontal" method="post" enctype="multipart/form-data">
       {{ csrf_field() }}
       <input type="file" name="import_file" />
-      <select id="dataMonth" type="text" class="form-control ui search dropdown selectpicker" name="dataMonth" title="select data month" data-style="btn-primary" required autofocus>
+      <select id="dataMonth" type="text" class="selectpicker" name="dataMonth" title="Select data month" data-style="btn-primary" required autofocus>
           <option value="Jan">Jan</option>
           <option value="Feb">Feb</option>
           <option value="Mar">Mar</option>
@@ -24,7 +24,7 @@
           <option value="Nov">Nov</option>
           <option value="Dec">Dec</option>          
         </select>
-      <button class="btn btn-primary">Import File</button>
+      <button class="btn btn-primary form-control">Import File</button>
     </form>
   </div>
 
