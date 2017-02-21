@@ -141,7 +141,6 @@ class HomeController extends Controller
                 'hr21' => $hr21,
                 'hr22' => $hr22,
                 'hr23' => $hr23
-                
             ]);
     }
 }
