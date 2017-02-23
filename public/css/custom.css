@@ -103,7 +103,7 @@
 }
 
 #powerplan {
-  font-size: 9px;
+  font-size: 14px;
 }
 
 #powerplan colgroup {
@@ -113,21 +113,23 @@
 #powerplan th {
   background: #009688;
   color: #fff;
+  padding: 9px;
   /*border: 0.2px solid #009688;*/
 }
 
-.meridian {
-  font-weight: bolder;
-  color: #009688;
-}
-
 #powerplan td {
+  padding: 9px;
   /*border: 0.2px solid #009688;*/
 }
 
 #powerplan img {
   width: 20px;
   padding: 5px 1px;
+}
+
+.meridian {
+  font-weight: bolder;
+  color: #009688;
 }
 
 .rotate {

@@ -17,7 +17,8 @@
     </div>
 </form>
 @if ($location != 'unknown')
+  <br>
   <div id="location-info-div" class="pull-right">
-    <em>You're seeing posts based on your current location, {{ $location }}. <a href="#" onclick="changeLocation()">Click here</a> if you're somewhere else.</em>
+    <em>You're seeing power plan and posts based on your current location, <b>{{ $location }}</b>. <a href="#" onclick="changeLocation()">Click here</a> if you're somewhere else.</em>
   </div>   
 @endif
