@@ -131,19 +131,6 @@
                 @endif  
           </div>
         </div>
-          
-          <!--Sidebar Widget-->
-          <div class="col-xs-12 col-md-4 col-lg-4 col-sm-4">
-            <div class="sidebar_widget">
-              <div class="sw_about">
-                <div class="sw_title">
-                  <h4>Power Plan For Today</h4>
-                  <div class="gDot"></div>
-                </div>
-                <p>Expect light between the hours of ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-            </div>
-          </div>
         </div><!--/.row-->
       </div> <!--/.container-->
     </section>

@@ -15,9 +15,12 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        // Handle setting of location...
+        if ($loc = $request->input('location')) {
+            session(['location' => $loc ]);
+        }
     }
 
     /**

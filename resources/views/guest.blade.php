@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
-        <!--[if IE]><link rel="shortcut icon" href="img/favicon.png"><![endif]-->
+        <!--[if IE]><link rel="shortcut icon" href="{{asset('img/favicon.png')}}"><![endif]-->
 
         <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-        <link rel="apple-touch-icon-precomposed" href="img/favicon-mobile.png">
+        <link rel="apple-touch-icon-precomposed" href="{{asset('img/favicon-mobile.png')}}">
 
         <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
         <link rel="icon" href="img/favicon.png">

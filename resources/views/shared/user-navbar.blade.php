@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/"><img src="img/wattaid_logo.png" class="logo"></a>
+            <a href="/"><img src="{{asset('img/wattaid_logo.png')}}" class="logo"></a>
         </div>
 
         <!-- Navbar Right -->

@@ -102,8 +102,51 @@
 
 }
 
-.tab_content ul li img {
-  height: 45px;
+#powerplan {
+  font-size: 9px;
+}
+
+#powerplan colgroup {
+  border: 0.02px solid #009688; 
+}
+
+#powerplan th {
+  background: #009688;
+  color: #fff;
+  /*border: 0.2px solid #009688;*/
+}
+
+.meridian {
+  font-weight: bolder;
+  color: #009688;
+}
+
+#powerplan td {
+  /*border: 0.2px solid #009688;*/
+}
+
+#powerplan img {
+  width: 20px;
+  padding: 5px 1px;
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
 }
 
 /*------ Welcome Page  --------*/ 
