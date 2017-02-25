@@ -28,7 +28,7 @@
               <ul>
                 <li>You are here:</li>
                 <li><a href="/">Home</a></li>
-                <li>Dashboard</li>
+                <li>Forum</li>
               </ul>
             </nav>
           </div>
