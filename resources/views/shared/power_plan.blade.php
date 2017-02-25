@@ -8,7 +8,8 @@
       <div class="gDot"></div>
     </div>
     @if ($powerPlan)
-        <table id="powerplan" class="text-center">
+    <div class="sw_content">
+        <table id="powerplan" class="text-center table-responsive">
           <colgroup span="13" class="columns"></colgroup>
           <tr>
             <th></th>
@@ -71,6 +72,7 @@
             <th>11:00</th>
           </tr>
         </table>
+    </div>
     @else
         @if ($location=='unknown')
             <p><em>Select your location to view power plan.</em></p>

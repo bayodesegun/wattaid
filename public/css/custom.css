@@ -113,7 +113,7 @@
 #powerplan th {
   background: #009688;
   color: #fff;
-  padding: 9px;
+  padding: 8px;
   /*border: 0.2px solid #009688;*/
 }
 
@@ -322,4 +322,8 @@ textarea {
 {
     display: block;
     margin-top: 10px;
+}
+
+.sw_content {
+  overflow: auto;
 }
