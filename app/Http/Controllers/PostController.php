@@ -43,7 +43,7 @@ class PostController extends Controller
     {
        if ($request->type == 'p') {
             $this->storePost($request);
-            return redirect('dashboard')->with('status', 'Post saved successfully!');
+            return redirect('forum')->with('status', 'Post saved successfully!');
        }
 
        elseif ($request->type == 'c') {
