@@ -10,6 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+
 // Specify page to render on visiting the root URL
 Route::get('/', function () {
     return view('welcome');
@@ -19,10 +20,10 @@ Route::get('/', function () {
 Auth::routes();
 
 // Handles GET requests sending data to the page (default) 
-Route::get('/dashboard', 'HomeController@index');
+Route::get('/forum', 'HomeController@index');
 
 // Handle POST requests sending data to the page (location form)
-Route::post('/dashboard', 'HomeController@index');
+Route::post('/forum', 'HomeController@index');
 
 // Handle POST requests for sending data to posts table
 Route::post('post/store', 'PostController@store');
@@ -32,3 +33,7 @@ Route::post('post/view', 'PostController@show');
 
 // Handle GET requests for a particular post on posts table
 Route::get('post/view', 'PostController@show');
+
+Route::get('importExport', 'MaatwebsiteController@importExport');
+Route::get('downloadExcel/{type}', 'MaatwebsiteController@downloadExcel');
+Route::post('importExcel', 'MaatwebsiteController@importExcel');

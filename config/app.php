@@ -167,6 +167,8 @@ return [
          * Package Service Providers...
          */
 
+        'Maatwebsite\Excel\ExcelServiceProvider',
+
         //
 
         /*
@@ -225,7 +227,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Location' => Stevebauman\Location\Facades\Location::class,
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
+        'Input' => Illuminate\Support\Facades\Input::class,
     ],
 
 ];
