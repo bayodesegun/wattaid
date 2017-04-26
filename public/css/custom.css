@@ -102,19 +102,23 @@
 
 }
 
-#powerplan {
-  font-size: 11px;
+.powerplan {
+  font-size: 12px;
   background: #fff;
+  margin: auto;
+  width: 100%;
+  overflow-x: scroll; 
 }
 
-#powerplan colgroup {
-  border: 0.02px solid #009688; 
+.powerplan colgroup {
+  /*border: 0.02px solid #009688; */
 }
 
-#powerplan th {
+.powerplan th {
   background: #009688;
   color: #fff;
-  /*border: 0.2px solid #009688;*/
+  padding: 5px;
+  border: 0.2px solid #009688;
 }
 
 .meridian {
@@ -122,12 +126,13 @@
   color: #009688;
 }
 
-#powerplan td {
+.powerplan td {
   /*border: 0.2px solid #009688;*/
+  padding: 6px;
 }
 
-#powerplan img {
-  width: 23px;
+.powerplan img {
+  width: 21px;
   padding: 5px 1px;
 }
 
@@ -324,8 +329,8 @@ textarea {
 }
 
 .fixed {
-  transition: 0.8s ease-in-out 0.5s;
-  -webkit-transition: 0.8s ease-in-out 0.4s;
-  -moz-transition: 0.8s ease-in-out 0.4s;
-  -o-transition: 0.8s ease-in-out 0.4s;
+  transition: 1s ease-in-out 1s;
+  -webkit-transition: 1s ease-in-out 1s;
+  -moz-transition: 1s ease-in-out 1s;
+  -o-transition: 1s ease-in-out 1s;
 }

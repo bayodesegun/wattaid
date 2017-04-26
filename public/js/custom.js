@@ -17,8 +17,11 @@ $(document).ready( function () {
 
   //scroll to fixed
   $('.fixed').scrollToFixed({
-      marginTop: $('.navbar').outerHeight(true) - 3, 
+      marginTop: $('.navbar').outerHeight(true) - 15, 
       zIndex: 999
+  });
+  $('.fixed-comment').scrollToFixed({
+      marginTop: $('.powerplan').outerHeight(true) + 15
   });
 });
 

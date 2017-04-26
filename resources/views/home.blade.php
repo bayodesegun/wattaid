@@ -118,11 +118,11 @@
       </div>      
       
       <!--Sidebar Widget-->
-      <div class="col-md-4 col-lg-4 col-sm-4 fixed">
+      <div class="col-md-4 col-lg-4 col-sm-4">
         <div class="sidebar_widget">
           @include('user_posts')
         </div>
-        <div class="text-left">
+        <div class="text-left fixed-comment">
           @include('location')
         </div>
       </div>
