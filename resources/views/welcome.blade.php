@@ -15,12 +15,12 @@
                 <div class="col-sm-9 col-md-9 col-lg-9">
                     <div class="promo_content no-padd">
                         <h3>Your one-stop site for power information.</h3>
-                        <p>You're not alone. Whatever you need. Wherever you are.</p>
+                        <p>Whatever you need. Wherever you are.</p>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <a class="btn btn-large btn-default" href="/register">
-                        <b>Sign Up Now</b>
+                        <b>Get Started</b>
                     </a>
                 </div>
             </div>
@@ -34,22 +34,22 @@
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="service_3_item">
                             <i class="fa fa-lightbulb-o"></i>
-                            <h3>Power Services</h3>
-                            <p>Do you need inverters, solar panels, or any power device installed? Scepter Concept Engineering offers all these services, and more.</p>
+                            <h3>Power Plan</h3>
+                            <p>Get up-to-date information on how and when power would be supplied to area, new consumers requirements for connection.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="service_3_item">
                             <i class="fa fa-briefcase"></i>
                             <h3>Power Information</h3>
-                            <p>Get up to date information on the load shedding plan in your area. Interact with other power consumers in your area.</p>
+                            <p>Wattaid enables efficient dissemination of information. You can <a href="/register">create an account</a> to interact with other power consumers in your area.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="service_3_item">
                             <i class="fa fa-rocket"></i>
                             <h3>Power Education</h3>
-                            <p>Have any challenge with any of your power devices? Post it here. You can post questions, and answer questions.</p>
+                            <p>Dos and Don’ts from Discos to consumers, faults/power problems. Get information on the latest happenings with the distribution companies.</p>
                         </div>
                     </div>
                 </div>
@@ -57,14 +57,14 @@
         </section>
         <!--end info service-->
 
-    <!--Start recent work-->
+    <!--Start DISCOS-->
     <section class="latest_work">
         <div class="container">
             <div class="row sub_content">
                 <div class="carousel-intro">
                     <div class="col-md-12">
                         <div class="dividerLatest">
-                            <h4>Recent Work</h4>
+                            <h4>Distribution Companies</h4>
                             <div class="gDot"></div>
                         </div>
                         <div class="carousel-navi">
@@ -77,88 +77,91 @@
                 
                 <div class="jcarousel recent-work-jc">
                 <ul class="jcarousel-list">
-                    <!-- Recent Work Item -->
+                    <!-- Distribution company -->
                     <li class="col-sm-3 col-md-3 col-lg-3">
                         <div class="recent-item">
                             <figure>
                                 <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/work_1.png" alt="" />
-                                    <a href="img/portfolio/full/portfolio_1.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
-                                    <a href="portfolio_single.html" class="hover-link">
-                                        <i class="fa fa-link"></i>
-                                    </a>
+                                    <iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://ekedp.com">
+                                    </iframe>
                                 </div>
                                 <figcaption class="item-description">
-                                    <h5>Inverters</h5>
-                                    <span>Technology</span>
+                                    <a href="https://ekedp.com"><p>Eko Electricity Distribution Company</p></a>
                                 </figcaption>
                             </figure>
                         </div>
                     </li>
                     
-                    <!-- Recent Work Item -->
+                    <!-- Distribution company -->
                     <li class="col-sm-3 col-md-3 col-lg-3">
                         <div class="recent-item">
                             <figure>
                                 <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/work_2.png" alt="" />
-                                    <a href="img/portfolio/full/portfolio_2.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
-                                    <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                    <iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://phed.com.ng/">
+                                    </iframe>
                                 </div>
                                 <figcaption class="item-description">
-                                    <h5>Inverters</h5>
-                                    <span>Installation</span>
+                                    <a href="http://phed.com.ng"><p>Port Harcourt Electricity Distribution Company</p></a>
                                 </figcaption>
                             </figure>
                         </div>
                     </li>
 
-                    <!-- Recent Work Item -->
+                    <!-- Distribution company -->
                     <li class="col-sm-3 col-md-3 col-lg-3">
                         <div class="recent-item">
                             <figure>
                                 <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/work_3.png" alt="" />
-                                    <a href="img/portfolio/full/portfolio_3.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
-                                    <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                    <iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://yedc.com.ng/">
+                                    </iframe>
                                 </div>
                                 <figcaption class="item-description">
-                                    <h5>High Power Inverters</h5>
-                                    <span>Technology</span>
+                                    <a href="http://yedc.com.ng"><p>Yola Electricity Distribution Company</p></a>
                                 </figcaption>
                             </figure>
                         </div>
                     </li>
                     
-                    <!-- Recent Work Item -->
+                    <!-- Distribution company -->
                     <li class="col-sm-3 col-md-3 col-lg-3">
                         <div class="recent-item">
                             <figure>
                                 <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/work_4.png" alt="" />
-                                    <a href="img/portfolio/full/portfolio_4.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
-                                    <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                    <iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://bedcpower.com/">
+                                    </iframe>
                                 </div>
                                 <figcaption class="item-description">
-                                    <h5>Solar Power</h5>
-                                    <span>Technology</span>
+                                    <a href="http://bedcpower.com"><p>Benin Electricity Distribution Company</p></a>
                                 </figcaption>
                             </figure>
                         </div>
                     </li>
 
-                    <!-- Recent Work Item -->
+                    <!-- Distribution company -->
                     <li class="col-sm-3 col-md-3 col-lg-3">
                         <div class="recent-item">
                             <figure>
                                 <div class="bwWrapper touching medium">
-                                    <img src="img/portfolio/work_5.png" alt="" />
-                                    <a href="img/portfolio/full/portfolio_5.jpg" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
-                                    <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                    <iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ibedc-ng.com/">
+                                    </iframe>
                                 </div>
                                 <figcaption class="item-description">
-                                    <h5>Power Banks</h5>
-                                    <span>Technology</span>
+                                    <a href="http://ibedc-ng.com"><p>Ibadan Electricity Distribution Company</p></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <!-- Distribution company -->
+                    <li class="col-sm-3 col-md-3 col-lg-3">
+                        <div class="recent-item">
+                            <figure>
+                                <div class="bwWrapper touching medium">
+                                    <iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ikejaelectric.com/">
+                                    </iframe>
+                                </div>
+                                <figcaption class="item-description">
+                                    <a href="http://ikejaelectric.com"><p>Ikeja Electricity Distribution Company</p></a>
                                 </figcaption>
                             </figure>
                         </div>
@@ -168,7 +171,7 @@
             </div>
         </div>
     </section>
-    <!--Start recent work-->
+    <!--End DISCOS-->
         
     <section class="fetaure_bottom">
         <div class="container">
@@ -188,17 +191,18 @@
                         
                         <div class="tab_container"> 
                             <div id="tab1" class="tab_content"> 
-                                <h3>Excellent Power Services</h3>
-                                <p>Scepter Concept Engineering provices products such as off- grid inverters (on-line and off-line inverter), Solar Panels with charge controllers of different ranges, Electrical wiring and installation of electrical panels.</p>
+                                <h3>Informative</h3>
+                                <p>Wattaid brings the Discos to the consumers for free in an informal and way enhances the understanding of consumer needs and. It aids the efficient dissemination   information between Discos and consumers nationwide.</p>
                                 <ul class="list_style circle">
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Competent Engineers and Technicians.</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Top-notch testing equipment.</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Strict measures towards achieving <b>zero fault occurences.</b></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Efficient dissemination of information</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Power plans</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Dos and Don’ts from Discos to consumers</b></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Referral to the individual website of the 11 Discos in the country</b></a></li>
                                 </ul>
                             </div><!-- end popular posts --> 
                             
                             <div id="tab2" class="tab_content">  
-                                <h3>Up to date information</h3>
+                                <h3>Dynamic</h3>
                                 <p>The site is daily updated with information from users and the power distribution companies. You can get to know the daily power plan for your area.</p>
                                 <ul class="list_style">
                                     <li><a href="#"><i class="fa fa-angle-right"></i> Daily power plan.</a></li>
@@ -208,8 +212,8 @@
                             </div><!-- end popular articles --> 
                             
                             <div id="tab3" class="tab_content">  
-                                <h3>Online interaction with other users</h3>
-                                <p><a href="/register">Create an account</a>, and you'll see have access to posts from all power users in your area. You can post questions or observations, as well as give answers to questions.</p>
+                                <h3>Interactive</h3>
+                                <p><a href="/register">Create an account</a>, and you'll have access to posts from all power users in your area. You can post questions or observations, as well as give answers to questions.</p>
                                 <ul class="list_style square">
                                     <li><a href="#"><i class="fa fa-angle-right"></i> Make and view posts based on location.</a></li>
                                     <li><a href="#"><i class="fa fa-angle-right"></i> Give or receive help in real time.</a></li>

@@ -151,8 +151,8 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 /*------ Welcome Page  --------*/ 
 .welcome {
-  padding: 14em 1.5em;
-  background: url('../img/light-bulb.jpg') no-repeat;
+  padding: 16em 1.5em;
+  background: url('../img/load-shedding.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -320,4 +320,11 @@ textarea {
 {
     display: block;
     margin-top: 10px;
+}
+
+.fixed {
+  transition: 0.8s ease-in-out 0.5s;
+  -webkit-transition: 0.8s ease-in-out 0.4s;
+  -moz-transition: 0.8s ease-in-out 0.4s;
+  -o-transition: 0.8s ease-in-out 0.4s;
 }

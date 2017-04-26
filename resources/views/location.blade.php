@@ -4,7 +4,7 @@
         <label for="location" class="hidden control-label">Location</label>                    
         <select id="location" type="text" class="form-control ui search dropdown selectpicker" name="location" data-live-search="true" title="Select location" data-style="btn-primary" required autofocus>
           <option value="Alagbaka Area" data-tokens= "alagbaka akure">Alagbaka Area</option>
-          <option value="Ijapo, Akure" data-tokens= "ijapo estate akure">Ijapo Area</option>
+          <option value="Ijapo Akure" data-tokens= "ijapo estate akure">Ijapo Area</option>
           <option value="Oba-Ile Area" data-tokens= "Oba-Ile Area">Oba-Ile Area</option>
           <option value="Ijoka Area" data-tokens= "ijoka akure">Ijoka Area</option>
           <option value="Express Area" data-tokens= "express akure">Express Area</option>
@@ -18,6 +18,6 @@
 </form>
 @if ($location != 'unknown')
   <div id="location-info-div" class="pull-right">
-    <em>You're seeing posts based on your current location, {{ $location }}. <a href="#" onclick="changeLocation()">Click here</a> if you're somewhere else.</em>
+    <em><small>You're seeing posts based on your current location, {{ $location }}. <a href="#" onclick="changeLocation()">Click here</a> if you're somewhere else.</small></em>
   </div>   
 @endif

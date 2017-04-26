@@ -59,6 +59,7 @@
             });
         </script>
 
+        <script src="{{asset('js/jquery-scrolltofixed-min.js')}}"></script>
         <script src="{{asset('js/jquery.easing.1.3.js')}}"></script>
         <script src="{{asset('js/retina-1.1.0.min.js')}}"></script>
         <script src="{{asset('js/jquery.cookie.js')}}"></script>

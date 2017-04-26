@@ -117,7 +117,7 @@
       </div>      
       
       <!--Sidebar Widget-->
-      <div class="col-md-4 col-lg-4 col-sm-4">
+      <div class="col-md-4 col-lg-4 col-sm-4 fixed">
         <div class="sidebar_widget">
           @include('shared.power_plan')
           @include('user_posts')
