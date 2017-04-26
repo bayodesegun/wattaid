@@ -17,14 +17,11 @@ $(document).ready( function () {
 
   //scroll to fixed
   $('.fixed').scrollToFixed({
-      dontSetWidth: true,
-      marginTop: $('.navbar').outerHeight(true) + 10,
-      limit: function() {
-          var limit = 0;
-          limit = $('.content').outerHeight(true) - 120;
-          return limit;
-      },
+      marginTop: $('.navbar').outerHeight(true) - 15,
       zIndex: 999
+  });
+  $('.fixed-comment').scrollToFixed({
+      marginTop: $('.powerplan').outerHeight(true) + 15
   });
 });
 
