@@ -44,7 +44,6 @@
       <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
         <div class="post-box">
           @if ($location !='unknown')
-            @include('shared.power_plan')
             <hr>
             @if ($user)
             <div class="sw_title">
