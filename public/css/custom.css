@@ -334,3 +334,13 @@ textarea {
   -moz-transition: 1s ease-in-out 1s;
   -o-transition: 1s ease-in-out 1s;
 }
+
+.sw_content {
+  overflow-x: scroll;
+}
+
+@media only screen and (min-width: 499px) {
+  .sw_content {
+    overflow-x: hidden;
+  }
+}

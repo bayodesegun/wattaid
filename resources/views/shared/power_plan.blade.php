@@ -6,7 +6,7 @@
     <div class="sw_content container">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
-          <table class="powerplan text-center table-responsive">
+          <table class="powerplan double text-center table-responsive">
             <colgroup span="24" class="columns"></colgroup>
             <tr>
               <th>12AM</th>
@@ -39,7 +39,7 @@
           </table>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
-          <table id="second-table" class="powerplan text-center table-responsive">
+          <table id="second-table" class="powerplan double text-center table-responsive">
             <colgroup span="24" class="columns"></colgroup>
             <tr>
               <th>12NN</th>
