@@ -1,4 +1,4 @@
-<div class="sw_about">
+<div class="sw_about fixed">
     <div class="sw_title">
       @if ($location !='unknown')
         <h4><b><?php echo date('l'); ?> Power Plan For {{$location }}</b></h4>

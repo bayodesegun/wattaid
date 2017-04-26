@@ -40,7 +40,7 @@
 <section class="content blog">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+      <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
         <div class="post-box">
           @if ($location !='unknown')
             @include('shared.power_plan')
@@ -118,7 +118,7 @@
       </div>      
       
       <!--Sidebar Widget-->
-      <div class="col-md-4 col-lg-4 col-sm-4 fixed">
+      <div class="col-md-5 col-lg-5 col-sm-5 fixed">
         <div class="sidebar_widget">
           @include('user_posts')
         </div>

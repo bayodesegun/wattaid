@@ -17,10 +17,11 @@ $(document).ready( function () {
 
   //scroll to fixed
   $('.fixed').scrollToFixed({
-      marginTop: $('.navbar').outerHeight(true) + 20,
+      dontSetWidth: true,
+      marginTop: $('.navbar').outerHeight(true) + 10,
       limit: function() {
           var limit = 0;
-          limit = $('.footer').offset().top - $(this).outerHeight(true) - 180;
+          limit = $('.content').outerHeight(true) - 120;
           return limit;
       },
       zIndex: 999
