@@ -18,11 +18,13 @@
                         <p>Whatever you need. Wherever you are.</p>
                     </div>
                 </div>
+                @if (Auth::guest())
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <a class="btn btn-large btn-default" href="/register">
                         <b>Get Started</b>
                     </a>
                 </div>
+                @endif
             </div>
         </div>
     </section>
@@ -205,9 +207,9 @@
                                 <h3>Dynamic</h3>
                                 <p>The site is daily updated with information from users and the power distribution companies. You can get to know the daily power plan for your area.</p>
                                 <ul class="list_style">
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Daily power plan.</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Help on power problems.</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Interact with other power users.</a></li>
+                                    <li><a ><i class="fa fa-angle-right"></i> Daily power plan.</a></li>
+                                    <li><a ><i class="fa fa-angle-right"></i> Help on power problems.</a></li>
+                                    <li><a ><i class="fa fa-angle-right"></i> Interact with other power users.</a></li>
                                 </ul>
                             </div><!-- end popular articles --> 
                             
@@ -215,9 +217,9 @@
                                 <h3>Interactive</h3>
                                 <p><a href="/register">Create an account</a>, and you'll have access to posts from all power users in your area. You can post questions or observations, as well as give answers to questions.</p>
                                 <ul class="list_style square">
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Make and view posts based on location.</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> Give or receive help in real time.</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right"></i> You are not alone</a></li>
+                                    <li><a ><i class="fa fa-angle-right"></i> Make and view posts based on location.</a></li>
+                                    <li><a ><i class="fa fa-angle-right"></i> Give or receive help in real time.</a></li>
+                                    <li><a ><i class="fa fa-angle-right"></i> You are not alone</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -256,7 +258,7 @@
                     <div class="our_clients">
                         <ul class="client_items clearfix">
                             <li>
-                                <a class="bwWrapper text" href="services.html"  data-placement="bottom" data-toggle="tooltip" title="Scepter Concept" ><img src="img/scepterconcept.png" alt="" /></a>
+                                <a class="bwWrapper text" data-placement="bottom" data-toggle="tooltip" title="Scepter Concept" ><img src="img/scepterconcept.png" alt="" /></a>
                             </li>
                         </ul><!--/ .client_items-->
                     </div>

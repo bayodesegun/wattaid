@@ -1,4 +1,4 @@
-<form id="location-form" class="form-inline @if ($location) @if ($location !='unknown') hidden @endif @endif" role="form" method="POST" action="{{ url('/dashboard') }}">
+<form id="location-form" class="form-inline @if ($location) @if ($location !='unknown') hidden @endif @endif" role="form" method="POST" action="{{ url('/forum') }}">
                     {{ csrf_field() }}                         
     <div class="form-group">
         <label for="location" class="hidden control-label">Location</label>                    
@@ -17,6 +17,7 @@
     </div>
 </form>
 @if ($location != 'unknown')
+  <br>
   <div id="location-info-div" class="pull-right">
     <em><small>You're seeing posts based on your current location, {{ $location }}. <a href="#" onclick="changeLocation()">Click here</a> if you're somewhere else.</small></em>
   </div>   

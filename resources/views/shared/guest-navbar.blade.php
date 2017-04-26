@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="/dashboard">Forum</a></li>
+                <li><a href="/forum">Forum</a></li>
                 <li class="dropdown">
                 @if (Auth::guest())
                     <a href="/login">Login</a>

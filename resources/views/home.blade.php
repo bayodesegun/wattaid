@@ -28,7 +28,7 @@
               <ul>
                 <li>You are here:</li>
                 <li><a href="/">Home</a></li>
-                <li>Dashboard</li>
+                <li>Forum</li>
               </ul>
             </nav>
           </div>
@@ -43,9 +43,11 @@
       <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <div class="post-box">
           @if ($location !='unknown')
+            @include('shared.power_plan')
+            <hr>
             @if ($user)
             <div class="sw_title">
-              <h2>New Post</h4>
+              <h4>New Post</h4>
               <div class="gDot"></div>
             </div>
             <form id ="post-form" class="form-horizontal col-md-12" role="form" method="post" action="{{ url('/post/store') }}">
@@ -64,8 +66,7 @@
               </div>
               <div class="form-group">                          
                  <button type="submit" class="btn btn-default pull-right">Post It!</button>                         
-              </div> 
-            <hr class="hr-compact">                         
+              </div>                       
             </form>
             @else
               <em><p>You're not logged in. Please <a href="/login">login</a> to post.</p></em>
@@ -79,7 +80,7 @@
           </div>
           
           @else
-            <p>Please select your location to view related posts.</p>
+            <p>Please select your location to view power plan and related posts.</p>
           @endif
         </div>
         
@@ -119,7 +120,6 @@
       <!--Sidebar Widget-->
       <div class="col-md-4 col-lg-4 col-sm-4 fixed">
         <div class="sidebar_widget">
-          @include('shared.power_plan')
           @include('user_posts')
         </div>
         <div class="text-left">

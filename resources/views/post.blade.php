@@ -30,7 +30,7 @@
               <ul>
                 <li>You are here:</li>
                 <li><a href="/">Home</a></li>
-                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/forum">Forum</a></li>
                 <li>{{ $post->post_title }}</li>
               </ul>
             </nav>
