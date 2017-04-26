@@ -1,14 +1,10 @@
-<div class="sw_about">
+<div class="sw_about fixed">
     <div class="sw_title">
-      @if ($location !='unknown')
-        <h4><b><?php echo date('l'); ?> Power Plan For {{$location }}</b></h4>
-      @else
-        <h4><b>Power Plan For Today</b></h4>
-      @endif
-      <div class="gDot"></div>
+      
     </div>
     @if ($powerPlan)
-        <table id="powerplan" class="text-center">
+    <div class="sw_content">
+        <table id="powerplan" class="text-center table-responsive">
           <colgroup span="13" class="columns"></colgroup>
           <tr>
             <th></th>
@@ -71,6 +67,7 @@
             <th>11:00</th>
           </tr>
         </table>
+    </div>
     @else
         @if ($location=='unknown')
             <p><em>Select your location to view power plan.</em></p>

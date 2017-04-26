@@ -17,12 +17,7 @@ $(document).ready( function () {
 
   //scroll to fixed
   $('.fixed').scrollToFixed({
-      marginTop: $('.navbar').outerHeight(true) + 20,
-      limit: function() {
-          var limit = 0;
-          limit = $('.footer').offset().top - $(this).outerHeight(true) - 180;
-          return limit;
-      },
+      marginTop: $('.navbar').outerHeight(true) - 3, 
       zIndex: 999
   });
 });

@@ -21,6 +21,7 @@
 @endif
 <section class="wrapper">
   <section>
+    @include('shared.power_plan')
     <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
@@ -119,7 +120,6 @@
       <!--Sidebar Widget-->
       <div class="col-md-4 col-lg-4 col-sm-4 fixed">
         <div class="sidebar_widget">
-          @include('shared.power_plan')
           @include('user_posts')
         </div>
         <div class="text-left">

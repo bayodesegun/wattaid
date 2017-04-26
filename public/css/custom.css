@@ -103,7 +103,8 @@
 }
 
 #powerplan {
-  font-size: 9px;
+  font-size: 11px;
+  background: #fff;
 }
 
 #powerplan colgroup {
@@ -126,7 +127,7 @@
 }
 
 #powerplan img {
-  width: 20px;
+  width: 23px;
   padding: 5px 1px;
 }
 
